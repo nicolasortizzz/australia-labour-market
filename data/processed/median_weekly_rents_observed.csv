@@ -1,0 +1,7 @@
+capital,median_weekly_rent_aud,period_label,rent_observed,rent_source,rent_method,n_observations
+Sydney,700.0,Nov 2025 (monthly bond lodgements),True,NSW Fair Trading rental bond lodgements,"Median weekly rent, all NSW lodgements (state proxy for Sydney capital)",23184.0
+Melbourne,580.0,Sep quarter 2025,True,VIC Homes Victoria Rental Report (RTBA bond lodgements),"Published metropolitan Melbourne median (Table 1, all properties)",
+Brisbane,620.0,Sep quarter 2025,True,QLD Residential Tenancies Authority median rents (bond lodgements),"Brisbane (C) LGA, all dwellings, published quarterly median",
+Perth,700.0,2025-11 (monthly lodgements),True,WA Consumer Protection rental bond lodgements (DMIRS/AHDAP release),"Median weekly rent, Greater Perth postcodes 6000–6199",5117.0
+Adelaide,580.0,Apr–Jun 2026 (quarterly report),True,SA Housing Trust Private Rent Report (CBS rental bonds),Bond-weighted median across metropolitan Adelaide postcode/dwelling strata,3176.0
+Hobart,530.0,Nov 2025 (monthly bond lodgements),True,Tasmania Department of Justice rental bond open data,"Median weekly rent, Greater Hobart postcodes (bond lodgements)",577.0

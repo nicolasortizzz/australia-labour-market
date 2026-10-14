@@ -4,16 +4,16 @@ Affordability index: earnings vs cost of living.
 Methodology (documented in README):
 - Base index A: real_earnings_index = (weekly AWE / CPI all-groups index) × 100.
   Higher = more weekly pay per unit of city price level (purchasing-power proxy).
-- Base index B: rent_burden_pct = 100 × (imputed_weekly_rent / weekly AWE).
+- Base index B: rent_burden_pct = 100 × (median_weekly_rent / weekly AWE).
   Lower = more affordable housing relative to pay.
 
-Imputed weekly rent by capital (when bond data unavailable):
-  rent_hat(city) = NSW_median_rent × (CPI_rent_index(city) / CPI_rent_index(Sydney))
-  Anchored to NSW Fair Trading Nov 2025 median; other cities scaled by ABS CPI rents only.
+Median weekly rent by capital:
+  Prefer official bond / rental-report medians where downloaded (see `rent_observed`).
+  Fallback: NSW_median × (CPI_rent_index(city) / CPI_rent_index(Sydney)) for ACT and NT.
 
 Sensitivity (saved separately):
 - S1: use EEH average weekly total cash instead of AWE ordinary time.
-- S2: rent burden using CPI all-groups index instead of CPI rents for scaling.
+- S2: rent burden using CPI all-groups index instead of CPI rents for scaling (imputation only).
 """
 
 from __future__ import annotations
@@ -26,23 +26,15 @@ import seaborn as sns
 
 from src.io.cpi import load_cpi_all_groups_by_capital, load_cpi_rents_by_capital
 from src.io.earnings import load_awe_ft_adult_ordinary_by_state, load_eeh_avg_weekly_total_cash_by_state
+from src.io.rents_merge import merge_observed_and_imputed
 from src.io.rents_nsw import load_nsw_weekly_rents
+from src.io.rents_observed import load_all_observed_medians
 
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw"
 PROC = ROOT / "data" / "processed"
 FIG = ROOT / "outputs" / "figures"
 TAB = ROOT / "outputs" / "tables"
-
-
-def _impute_weekly_rents(cpi_rents: pd.DataFrame, nsw_median: float) -> pd.DataFrame:
-    sydney_idx = float(
-        cpi_rents.loc[cpi_rents["capital"] == "Sydney", "cpi_rent_index"].iloc[0]
-    )
-    out = cpi_rents.copy()
-    out["imputed_median_weekly_rent_aud"] = nsw_median * (out["cpi_rent_index"] / sydney_idx)
-    out["rent_imputation"] = "NSW bond median × (city CPI rent / Sydney CPI rent)"
-    return out
 
 
 def run() -> dict:
@@ -61,18 +53,32 @@ def run() -> dict:
         .iloc[0]
     )
 
-    rents = _impute_weekly_rents(cpi_rent, nsw_median)
+    observed = load_all_observed_medians(RAW)
+    observed.to_csv(PROC / "median_weekly_rents_observed.csv", index=False)
+    observed.to_csv(TAB / "median_weekly_rents_by_capital.csv", index=False)
+
+    rents = merge_observed_and_imputed(cpi_rent, observed, nsw_median)
     base = awe.merge(cpi, left_on="capital", right_on="capital", how="left")
     base = base.merge(
-        rents[["capital", "imputed_median_weekly_rent_aud", "rent_imputation"]],
+        rents[
+            [
+                "capital",
+                "median_weekly_rent_aud",
+                "rent_observed",
+                "rent_imputation",
+                "rent_source",
+                "period_label",
+            ]
+        ],
         on="capital",
         how="left",
     )
+    base = base.rename(columns={"period_label": "rent_period"})
     base["real_earnings_index"] = base["awe_weekly_aud"] / base["cpi_all_groups_index"] * 100.0
     base["rent_burden_pct"] = (
-        base["imputed_median_weekly_rent_aud"] / base["awe_weekly_aud"] * 100.0
+        base["median_weekly_rent_aud"] / base["awe_weekly_aud"] * 100.0
     )
-    base["residual_weekly_aud"] = base["awe_weekly_aud"] - base["imputed_median_weekly_rent_aud"]
+    base["residual_weekly_aud"] = base["awe_weekly_aud"] - base["median_weekly_rent_aud"]
     base = base.sort_values("real_earnings_index", ascending=False)
     base.to_csv(PROC / "affordability_base.csv", index=False)
     base.to_csv(TAB / "affordability_index.csv", index=False)
@@ -80,17 +86,25 @@ def run() -> dict:
     # Sensitivity
     s1 = base.merge(eeh, on=["state", "capital"], how="left")
     s1["real_earnings_index_s1"] = s1["eeh_weekly_cash_aud"] / s1["cpi_all_groups_index"] * 100.0
-    s1["rent_burden_pct_s1"] = s1["imputed_median_weekly_rent_aud"] / s1["eeh_weekly_cash_aud"] * 100.0
+    s1["rent_burden_pct_s1"] = s1["median_weekly_rent_aud"] / s1["eeh_weekly_cash_aud"] * 100.0
 
     sydney_cpi = float(cpi.loc[cpi["capital"] == "Sydney", "cpi_all_groups_index"].iloc[0])
     rent_s2 = nsw_median * (cpi["cpi_all_groups_index"] / sydney_cpi)
     rent_s2 = cpi[["capital"]].assign(imputed_rent_s2=rent_s2.values)
     s2 = base.merge(rent_s2, on="capital", how="left")
-    s2["rent_burden_pct_s2"] = s2["imputed_rent_s2"] / s2["awe_weekly_aud"] * 100.0
+    s2["rent_burden_pct_s2"] = s2.apply(
+        lambda r: (
+            r["median_weekly_rent_aud"] / r["awe_weekly_aud"] * 100.0
+            if r["rent_observed"]
+            else r["imputed_rent_s2"] / r["awe_weekly_aud"] * 100.0
+        ),
+        axis=1,
+    )
     sens = s1.merge(s2[["state", "rent_burden_pct_s2"]], on="state", how="left")[
         [
             "state",
             "capital",
+            "rent_observed",
             "real_earnings_index",
             "real_earnings_index_s1",
             "rent_burden_pct",
@@ -111,10 +125,15 @@ def run() -> dict:
         edgecolors="k",
     )
     for _, row in plot_df.iterrows():
-        ax.annotate(row["state"], (row["cpi_all_groups_index"], row["awe_weekly_aud"]), fontsize=9)
+        marker = "●" if row["rent_observed"] else "○"
+        ax.annotate(
+            f"{row['state']}{marker}",
+            (row["cpi_all_groups_index"], row["awe_weekly_aud"]),
+            fontsize=9,
+        )
     ax.set_xlabel("CPI all groups index (capital)")
     ax.set_ylabel("AWE weekly ($, FT adult ordinary time)")
-    ax.set_title("Affordability map — colour = imputed rent burden (% of AWE)")
+    ax.set_title("Affordability map — colour = rent burden (% of AWE); ● observed rent, ○ imputed")
     fig.colorbar(ax.collections[0], ax=ax, label="Rent burden %")
     fig.tight_layout()
     fig.savefig(FIG / "affordability_scatter.png", dpi=150)
@@ -122,12 +141,14 @@ def run() -> dict:
 
     best = base.iloc[0]
     worst_burden = base.loc[base["rent_burden_pct"].idxmax()]
+    n_observed = int(base["rent_observed"].sum())
     summary = {
         "best_real_earnings_capital": best["capital"],
         "best_real_earnings_state": best["state"],
         "best_real_earnings_index": float(best["real_earnings_index"]),
         "highest_rent_burden_capital": worst_burden["capital"],
         "highest_rent_burden_pct": float(worst_burden["rent_burden_pct"]),
+        "capitals_with_observed_rent": n_observed,
         "nsw_anchor_median_rent_aud": nsw_median,
     }
     pd.Series(summary).to_json(PROC / "affordability_summary.json", indent=2)

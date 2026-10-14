@@ -172,6 +172,26 @@
       "notes": ""
     },
     {
+      "key": "qld_rta_median_rents",
+      "description": "QLD RTA \u2014 quarterly median rents from bond lodgements",
+      "url": "https://www.rta.qld.gov.au/sites/default/files/2023-04/rta-bond-statistics.xlsx",
+      "local_path": "data/raw/qld_rta_median_rents.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "5c3af9c21bb93b8a34912d3548e95b0f7da747d94c9e4fc6a0175c969a2e968a",
+      "bytes": 6254358,
+      "notes": ""
+    },
+    {
+      "key": "sa_private_rent_postcodes",
+      "description": "SA Housing Trust Private Rent Report \u2014 metropolitan strata (CBS bonds)",
+      "url": "https://data.sa.gov.au/data/dataset/8eb97a72-9919-448b-8de6-fc1530b3f7ec/resource/b4aa86f1-7efa-4690-9793-bd36df97ad29/download/private-rental-report-2026-06.xlsx",
+      "local_path": "data/raw/sa_private_rent_by_postcode_2026-06.csv",
+      "access_date": "2026-10-14",
+      "sha256": "46d75059d4b2a86c3f229d2c41d28ff25b10e63c94dfa85ebb5e7c11a65c9f22",
+      "bytes": 95715,
+      "notes": "Direct Data SA XLSX returned HTTP 403 from build environment; postcode strata CSV ingested from CC BY mirror of the same Private Rent Report release."
+    },
+    {
       "key": "slci_all_groups",
       "description": "ABS SLCI Jun 2026 \u2014 all groups index",
       "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/selected-living-cost-indexes-australia/jun-2026/646701.xlsx",
@@ -180,6 +200,36 @@
       "sha256": "cb8190089914d2c8061467df169323ebe37a2a29aaf024df43f692fb61de85e6",
       "bytes": 58028,
       "notes": ""
+    },
+    {
+      "key": "tas_rental_bond_november_2025",
+      "description": "Tasmania rental bond lodgements \u2014 November 2025 (open data)",
+      "url": "https://data.gov.au/data/dataset/a5096409-4702-468e-94a7-303951b4173b/resource/df29642c-5d80-47f1-9f93-d4ca802ab6c3/download/abs-report-november-2025.xlsx",
+      "local_path": "data/raw/tas_rental_bond_november_2025.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "663235927d1fef86b639a4d33c3e51cf975afdfc7af898a4db55df644468a312",
+      "bytes": 209862,
+      "notes": ""
+    },
+    {
+      "key": "vic_rental_report_tables_sep2025",
+      "description": "VIC Homes Victoria Rental Report \u2014 tables Sep quarter 2025 (Melbourne median)",
+      "url": "https://www.dffh.vic.gov.au/tables-rental-report-september-quarter-2025-excel",
+      "local_path": "data/raw/vic_rental_report_tables_sep2025.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "895746dee06f5199f877ed86f06243624aca3686c962a5cf5323e90d1f44c495",
+      "bytes": 1156235,
+      "notes": ""
+    },
+    {
+      "key": "wa_rental_bonds",
+      "description": "WA Consumer Protection rental bonds \u2014 monthly lodgement microdata (AHDAP)",
+      "url": "https://ahdap-public-data.s3.ap-southeast-2.amazonaws.com/RentalBondsWA/wa-rental-bond-sep2026.zip",
+      "local_path": "data/raw/wa_rental_bonds.zip",
+      "access_date": "2026-10-14",
+      "sha256": "1832b9005c6454e0e624c018f53a7caf269810ceb7c8a2d53b9b8663b65a6b62",
+      "bytes": 4169264,
+      "notes": "Package landing page: https://housing-data-exchange.ahdap.org/dataset/west-australia-rental-bonds-data-2023-current"
     }
   ]
 }
