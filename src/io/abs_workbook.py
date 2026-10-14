@@ -15,8 +15,15 @@ def read_abs_data1(path: Path) -> pd.DataFrame:
     if raw.empty:
         raise ValueError(f"Empty Data1 in {path}")
     labels = raw.iloc[0].tolist()
+    seen: dict[str, int] = {}
+    unique_labels: list = []
+    for lab in labels:
+        key = str(lab)
+        n = seen.get(key, 0)
+        seen[key] = n + 1
+        unique_labels.append(key if n == 0 else f"{key}__{n}")
     body = raw.iloc[10:].copy()
-    body.columns = labels
+    body.columns = unique_labels
     period_col = body.columns[0]
     body[period_col] = pd.to_datetime(body[period_col], errors="coerce")
     body = body.dropna(subset=[period_col]).set_index(period_col)

@@ -1,0 +1,41 @@
+anzsco,title,national_rating,NSW,VIC,QLD,SA,WA,TAS,NT,ACT,on_csol,on_mltssl,on_stsol,on_rol,is_shortage,skilled_visa_relevant,migrant_priority
+224111,Actuary,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+233911,Aeronautical Engineer,S,S,S,S,S,S,NS,S,S,True,True,False,True,True,True,5
+234111,Agricultural Consultant,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233912,Agricultural Engineer,S,S,S,S,S,S,NS,NS,NS,True,True,False,True,True,True,5
+334112,Airconditioning and Mechanical Services Plumber,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+342111,Airconditioning and Refrigeration Mechanic,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+323111,Aircraft Maintenance Engineer (Avionics),S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+323112,Aircraft Maintenance Engineer (Mechanical),S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+323113,Aircraft Maintenance Engineer (Structures),S,S,S,S,S,S,NS,S,NS,True,False,True,True,True,True,5
+411111,Ambulance Officer,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+252711,Audiologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+321111,Automotive Electrician,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+351111,Baker,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+233913,Biomedical Engineer,S,S,S,S,S,NS,S,NS,S,True,True,False,True,True,True,5
+399111,Boat Builder and Repairer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+331111,Bricklayer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+312113,Building Inspector,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+351211,Butcher or Smallgoods Maker,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+342411,Cabler (Data and Telecommunications),S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+253312,Cardiologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253512,Cardiothoracic Surgeon,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+331212,Carpenter,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+331211,Carpenter and Joiner,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+351311,Chef,R,R,R,R,R,R,R,S,S,True,True,False,True,True,True,5
+233211,Civil Engineer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+312211,Civil Engineering Draftsperson,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+312212,Civil Engineering Technician,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253313,Clinical Haematologist,S,S,S,S,S,S,NS,NS,S,True,True,False,True,True,True,5
+272311,Clinical Psychologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+133111,Construction Project Manager,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+351411,Cook,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+252311,Dental Specialist,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+411213,Dental Technician,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+253911,Dermatologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253917,Diagnostic and Interventional Radiologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+321212,Diesel Motor Mechanic,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+334113,Drainer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+241111,Early Childhood (Pre-primary School) Teacher,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+272312,Educational Psychologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233311,Electrical Engineer,S,S,NS,NS,S,S,NS,S,NS,True,True,False,True,True,True,5

@@ -37,27 +37,24 @@ def load_ivi_trend_national(path: Path) -> pd.DataFrame:
     raise NotImplementedError("Unexpected IVI column layout")
 
 
-def load_ivi_occupation_latest(path: Path) -> pd.DataFrame:
-    """Latest month vacancies by 4-digit ANZSCO unit group (national aggregate column)."""
+def _date_columns(df: pd.DataFrame) -> list:
+    return [c for c in df.columns if hasattr(c, "year")]
+
+
+def load_ivi_occupation_latest(path: Path, state: str = "AUST") -> pd.DataFrame:
+    """Latest month IVI vacancies by ANZSCO sub-major group (Level 3), national or by state."""
     df = pd.read_excel(path, sheet_name="Trend")
-    date_cols = [c for c in df.columns if isinstance(c, (pd.Timestamp,))]
+    date_cols = _date_columns(df)
     if not date_cols:
-        date_cols = [
-            c
-            for c in df.columns
-            if hasattr(c, "year") or (isinstance(c, str) and c[:4].isdigit())
-        ]
+        raise ValueError("No date columns in IVI Trend sheet")
     latest_col = sorted(date_cols)[-1]
-    sub = df[df["Level"] == 3].copy()  # 4-digit unit groups
+    sub = df[(df["Level"] == 3) & (df["State"] == state)].copy()
     sub["anzsco"] = sub["ANZSCO_CODE"].astype(str).str.replace(r"\.0$", "", regex=True)
     sub["vacancies"] = pd.to_numeric(sub[latest_col], errors="coerce")
-    sub["title"] = sub["OCCUPATION_TITLE"]
+    sub["title"] = sub["Title"]
     out = sub[["anzsco", "title", "vacancies"]].dropna(subset=["vacancies"])
-    # YoY: compare to column 12 months earlier if available
     if len(date_cols) >= 13:
         prior_col = date_cols[-13]
-        sub["vacancies_prior"] = pd.to_numeric(sub[prior_col], errors="coerce")
-        out["vacancy_yoy_pct"] = (
-            (out["vacancies"] - sub["vacancies_prior"]) / sub["vacancies_prior"] * 100
-        )
-    return out.sort_values("vacancies", ascending=False)
+        prior = pd.to_numeric(sub[prior_col], errors="coerce")
+        out["vacancy_yoy_pct"] = (out["vacancies"] - prior) / prior * 100.0
+    return out.sort_values("vacancies", ascending=False).reset_index(drop=True)

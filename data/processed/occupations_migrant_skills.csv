@@ -1,0 +1,917 @@
+anzsco,title,national_rating,NSW,VIC,QLD,SA,WA,TAS,NT,ACT,on_csol,on_mltssl,on_stsol,on_rol,is_shortage,skilled_visa_relevant,migrant_priority
+111111,Chief Executive or Managing Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+111211,Corporate General Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+121111,Aquaculture Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+121311,Apiarist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+121312,Beef Cattle Farmer,NS,NS,NS,NS,NS,NS,NS,S,NS,False,False,False,True,False,True,0
+121313,Dairy Cattle Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+121314,Deer Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+121315,Goat Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+121316,Horse Breeder,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+121318,Pig Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+121321,Poultry Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+121322,Sheep Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+121323,Mixed Cattle and Sheep Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121399,Livestock Farmers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+121511,Cotton Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121512,"Grain, Oilseed, Pulse or Pasture Grower / Field Crop Grower",NS,NS,NS,NS,NS,S,NS,NS,NS,False,False,False,False,False,False,0
+121513,Sugar Cane Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121599,Broadacre Crop Growers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121611,Flower Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+121612,Fruit Grower,NS,NS,NS,NS,NS,S,NS,NS,NS,False,False,False,False,False,False,0
+121613,Nut Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121614,Production Nursery Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121615,Turf Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121616,Vegetable Grower,NS,NS,NS,NS,NS,S,NS,NS,NS,False,False,False,False,False,False,0
+121617,Wine Grape Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121699,Horticultural Crop Growers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121711,Broadacre Crop and Livestock Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+121799,Mixed Production Farmers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+131112,Sales and Marketing Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+131113,Advertising Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+131114,Public Relations Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+132111,Corporate Services Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+132211,Finance Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+132311,Human Resource Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+132411,Policy and Planning Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+132511,Research and Development Manager,NS,NS,NS,NS,NS,NS,NS,S,NS,True,False,True,True,False,True,3
+133111,Construction Project Manager,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+133112,Project Builder,NS,NS,NS,NS,NS,S,NS,S,NS,True,False,False,True,False,True,2
+133211,Engineering Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+133311,Importer or Exporter,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+133312,Wholesaler,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+133411,Manufacturer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+133511,Production Manager (Forestry),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+133512,Production Manager (Manufacturing),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+133513,Production Manager (Mining),NS,NS,NS,NS,NS,NS,NS,S,NS,False,False,True,True,False,True,1
+133611,Supply and Distribution Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+133612,Procurement Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+134111,Child Care Centre Manager,NS,NS,NS,NS,NS,S,NS,S,NS,False,True,False,True,False,True,1
+134211,Medical Administrator / Medical Superintendent,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+134212,Nursing Clinical Director,NS,NS,NS,NS,R,S,NS,NS,NS,True,True,False,True,False,True,3
+134213,Primary Health Organisation Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+134214,Welfare Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+134299,Health and Welfare Services Managers nec,NS,NS,R,NS,NS,NS,NS,S,NS,False,False,True,True,False,True,1
+134311,School Principal,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+134411,Faculty Head,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+134412,Regional Education Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+134499,Education Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+135111,Chief Information Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+135112,ICT Project Manager,NS,NS,NS,NS,NS,NS,NS,S,NS,True,False,True,True,False,True,3
+135199,ICT Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+139911,Arts Administrator or Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+139912,Environmental Manager,NS,NS,NS,S,NS,S,NS,NS,NS,True,True,False,True,False,True,3
+139913,Laboratory Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+139915,Sports Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+139916,Quality Assurance Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+139917,Regulatory Affairs Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+139999,Specialist Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+141111,Cafe or Restaurant Manager,NS,NS,NS,NS,R,NS,R,S,S,False,False,True,True,False,True,1
+141211,Caravan Park and Camping Ground Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+141311,Hotel or Motel Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+141411,Licensed Club Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+141911,Bed and Breakfast Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+141912,Retirement Village Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+141999,Accommodation and Hospitality Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+142111,Retail Manager (General),NS,NS,NS,NS,NS,NS,R,R,NS,True,False,False,False,False,True,2
+142112,Antique Dealer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+142113,Betting Agency Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+142114,Hair or Beauty Salon Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+142115,Post Office Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+142116,Travel Agency Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+149111,Amusement Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+149112,Fitness Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+149113,Sports Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+149211,Call or Contact Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+149212,Customer Service Manager,NS,NS,NS,NS,NS,NS,NS,S,NS,False,False,True,True,False,True,1
+149311,Conference and Event Organiser,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+149411,Fleet Manager,NS,NS,NS,NS,NS,S,NS,S,NS,True,False,False,False,False,True,2
+149412,Railway Station Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+149413,Transport Company Manager,NS,NS,NS,NS,NS,S,NS,NS,NS,False,False,True,True,False,True,1
+149911,Boarding Kennel or Cattery Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+149912,Cinema or Theatre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+149913,Facilities Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+149914,Financial Institution Branch Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+149915,Equipment Hire Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+149999,"Hospitality, Retail and Service Managers nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+211111,Actor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+211112,Dancer or Choreographer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+211113,Entertainer or Variety Artist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+211199,"Actors, Dancers and Other Entertainers nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+211211,Composer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+211212,Music Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+211213,Musician (Instrumental),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+211214,Singer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+211299,Music Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+211311,Photographer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+211411,Painter (Visual Arts),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+211412,Potter or Ceramic Artist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+211413,Sculptor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+211499,Visual Arts and Crafts Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+212111,Artistic Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+212112,Media Producer (excluding Video),NS,NS,NS,NS,NS,S,NS,NS,NS,False,False,False,False,False,False,0
+212113,Radio Presenter,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+212114,Television Presenter,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+212211,Author,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+212212,Book or Script Editor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+212311,"Art Director (Film, Television or Stage)",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+212312,"Director (Film, Television, Radio or Stage)",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+212313,Director of Photography,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+212314,Film and Video Editor,S,S,S,S,S,S,S,S,S,False,False,True,True,True,True,3
+212315,Program Director (Television or Radio),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+212316,Stage Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+212317,Technical Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+212318,Video Producer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+212399,"Film, Television, Radio and Stage Directors nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+212411,Copywriter,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+212412,Newspaper or Periodical Editor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+212413,Print Journalist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+212414,Radio Journalist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+212415,Technical Writer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+212416,Television Journalist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+212499,Journalists and Other Writers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+221111,Accountant (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+221112,Management Accountant,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+221113,Taxation Accountant,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+221211,Company Secretary,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+221212,Corporate Treasurer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+221213,External Auditor,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+221214,Internal Auditor,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+222111,Commodities Trader,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+222112,Finance Broker,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+222113,Insurance Broker,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+222199,Financial Brokers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+222211,Financial Market Dealer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+222212,Futures Trader,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+222213,Stockbroking Dealer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+222299,Financial Dealers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+222311,Financial Investment Adviser,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+222312,Financial Investment Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+223111,Human Resource Adviser,NS,NS,NS,NS,S,NS,NS,S,NS,True,False,False,True,False,True,2
+223112,Recruitment Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+223113,Workplace Relations Adviser,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+223311,Training and Development Professional,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+224111,Actuary,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+224112,Mathematician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+224114,Data Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+224115,Data Scientist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+224116,Statistician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+224211,Archivist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+224212,Gallery or Museum Curator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+224213,Health Information Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+224214,Records Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+224311,Economist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+224411,Intelligence Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+224412,Policy Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+224511,Land Economist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+224512,Valuer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+224611,Librarian,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+224712,Organisation and Methods Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+224713,Management Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+224714,Supply Chain Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+224911,Electorate Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+224912,Liaison Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+224913,Migration Agent / Immigration Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+224914,Patents Examiner,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+224999,Information and Organisation Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+225111,Advertising Specialist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+225112,Market Research Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+225113,Marketing Specialist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+225114,Content Creator (Marketing),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+225115,Digital Marketing Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+225211,ICT Account Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+225212,ICT Business Development Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+225213,ICT Sales Representative,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+225311,Public Relations Professional,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+225411,Sales Representative (Industrial Products),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+225412,Sales Representative (Medical and Pharmaceutical Products),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+225499,Technical Sales Representatives nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+231111,Aeroplane Pilot,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+231112,Air Traffic Controller,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+231113,Flying Instructor,S,S,S,S,S,S,NS,NS,S,True,False,False,True,True,True,4
+231114,Helicopter Pilot,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+231199,Air Transport Professionals nec,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+231211,Master Fisher,S,S,S,S,S,S,S,S,NS,False,False,False,False,True,False,2
+231212,Ship's Engineer,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+231213,Ship's Master,S,S,S,S,S,S,S,S,S,False,False,False,True,True,True,2
+231214,Ship's Officer,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+231215,Marine Surveyor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+231299,Marine Transport Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+232111,Architect,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+232112,Landscape Architect,NS,NS,NS,NS,NS,NS,NS,S,NS,True,True,False,True,False,True,3
+232212,Surveyor,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+232213,Cartographer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+232214,Other Spatial Scientist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+232311,Fashion Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+232312,Industrial Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+232313,Jewellery Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+232411,Graphic Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+232412,Illustrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+232413,Multimedia Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+232414,Web Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+232511,Interior Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+232611,Urban and Regional Planner,R,R,R,R,R,R,R,S,S,True,False,True,True,True,True,5
+233111,Chemical Engineer,NS,NS,NS,S,NS,NS,NS,S,NS,True,True,False,True,False,True,3
+233112,Materials Engineer,NS,NS,S,S,NS,NS,S,NS,NS,True,True,False,True,False,True,3
+233211,Civil Engineer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233212,Geotechnical Engineer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233213,Quantity Surveyor,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233214,Structural Engineer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233215,Transport Engineer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233311,Electrical Engineer,S,S,NS,NS,S,S,NS,S,NS,True,True,False,True,True,True,5
+233411,Electronics Engineer,NS,NS,NS,S,S,NS,NS,NS,S,True,True,False,True,False,True,3
+233511,Industrial Engineer,NS,NS,NS,S,S,NS,NS,S,S,True,True,False,True,False,True,3
+233512,Mechanical Engineer,NS,NS,NS,NS,S,S,NS,S,NS,True,True,False,True,False,True,3
+233513,Production or Plant Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+233611,Mining Engineer (excluding Petroleum),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233612,Petroleum Engineer,S,S,S,S,S,S,S,S,NS,True,True,False,True,True,True,5
+233911,Aeronautical Engineer,S,S,S,S,S,S,NS,S,S,True,True,False,True,True,True,5
+233912,Agricultural Engineer,S,S,S,S,S,S,NS,NS,NS,True,True,False,True,True,True,5
+233913,Biomedical Engineer,S,S,S,S,S,NS,S,NS,S,True,True,False,True,True,True,5
+233914,Engineering Technologist,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+233915,Environmental Engineer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233916,Naval Architect / Marine Designer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+233999,Engineering Professionals nec,NS,NS,NS,S,S,NS,NS,NS,NS,True,True,False,True,False,True,3
+234111,Agricultural Consultant,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+234113,Forester / Forest Scientist,S,S,S,S,S,S,S,S,S,False,True,False,True,True,True,3
+234114,Agricultural Research Scientist,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+234115,Agronomist,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+234116,Aquaculture or Fisheries Scientist,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+234211,Chemist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234212,Food Technologist,NS,S,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234213,Wine Maker,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+234311,Conservation Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+234312,Environmental Consultant,NS,NS,NS,NS,S,NS,NS,S,NS,True,True,False,True,False,True,3
+234313,Environmental Research Scientist,S,S,S,S,S,S,S,S,S,False,True,False,True,True,True,3
+234314,Park Ranger,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+234399,Environmental Scientists nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234411,Geologist,S,NS,NS,NS,NS,S,NS,S,NS,True,False,True,True,True,True,5
+234412,Geophysicist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+234413,Hydrogeologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+234511,Life Scientist (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234513,Biochemist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234514,Biotechnologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+234515,Botanist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234516,Marine Biologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234517,Microbiologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+234521,Entomologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+234522,Zoologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+234599,Life Scientists nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234611,Medical Laboratory Scientist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+234612,Respiratory Scientist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+234711,Veterinarian,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+234911,Conservator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234912,Metallurgist,S,S,S,S,S,S,S,S,NS,True,True,False,True,True,True,5
+234913,Meteorologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234914,Physicist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+234915,Exercise Physiologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+234999,Natural and Physical Science Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+241111,Early Childhood (Pre-primary School) Teacher,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+241213,Primary School Teacher,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+241311,Middle School Teacher / Intermediate School Teacher,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+241411,Secondary School Teacher,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+241511,Special Needs Teacher,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+241512,Teacher of the Hearing Impaired,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+241513,Teacher of the Sight Impaired,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+241599,Special Education Teachers nec,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+242111,University Lecturer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+242112,University Tutor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+242211,Vocational Education Teacher / Polytechnic Teacher,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+249111,Education Adviser,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+249112,Education Reviewer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+249211,Art Teacher (Private Tuition),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+249212,Dance Teacher (Private Tuition),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+249213,Drama Teacher (Private Tuition),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+249214,Music Teacher (Private Tuition),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+249299,Private Tutors and Teachers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+249311,Teacher of English to Speakers of Other Languages,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+251111,Dietitian,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+251112,Nutritionist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+251211,Medical Diagnostic Radiographer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+251212,Medical Radiation Therapist,R,R,R,R,R,R,R,R,S,True,True,False,True,True,True,5
+251213,Nuclear Medicine Technologist,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+251214,Sonographer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+251311,Environmental Health Officer,R,R,R,R,R,R,R,R,S,False,False,False,True,True,True,2
+251312,Occupational Health and Safety Adviser,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+251411,Optometrist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+251412,Orthoptist,S,S,S,S,S,S,S,NS,S,True,False,True,True,True,True,5
+251511,Hospital Pharmacist,R,R,R,R,R,R,R,R,S,True,False,True,True,True,True,5
+251512,Industrial Pharmacist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+251513,Retail Pharmacist,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+251911,Health Promotion Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+251912,Orthotist or Prosthetist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+251999,Health Diagnostic and Promotion Professionals nec,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+252111,Chiropractor,S,S,S,S,S,S,S,S,S,False,True,False,True,True,True,3
+252112,Osteopath,S,S,S,S,S,S,S,S,S,False,True,False,True,True,True,3
+252211,Acupuncturist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+252212,Homoeopath,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+252213,Naturopath,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+252214,Traditional Chinese Medicine Practitioner,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+252299,Complementary Health Therapists nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+252311,Dental Specialist,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+252312,Dentist,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+252411,Occupational Therapist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+252511,Physiotherapist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+252611,Podiatrist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+252711,Audiologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+252712,Speech Pathologist / Speech Language Therapist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253111,General Practitioner,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253112,Resident Medical Officer,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+253211,Anaesthetist,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+253311,Specialist Physician (General Medicine),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253312,Cardiologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253313,Clinical Haematologist,S,S,S,S,S,S,NS,NS,S,True,True,False,True,True,True,5
+253314,Medical Oncologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253315,Endocrinologist,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+253316,Gastroenterologist,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+253317,Intensive Care Specialist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253318,Neurologist,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+253321,Paediatrician,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253322,Renal Medicine Specialist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253323,Rheumatologist,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+253324,Thoracic Medicine Specialist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253399,Specialist Physicians nec,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253411,Psychiatrist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253511,Surgeon (General),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253512,Cardiothoracic Surgeon,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+253513,Neurosurgeon,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253514,Orthopaedic Surgeon,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253515,Otorhinolaryngologist,S,S,S,S,S,S,S,NS,NS,True,True,False,True,True,True,5
+253516,Paediatric Surgeon,S,S,S,S,S,S,S,NS,NS,True,True,False,True,True,True,5
+253517,Plastic and Reconstructive Surgeon,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253518,Urologist,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+253521,Vascular Surgeon,S,S,S,S,S,S,S,S,NS,True,True,False,True,True,True,5
+253911,Dermatologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253912,Emergency Medicine Specialist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253913,Obstetrician and Gynaecologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253914,Ophthalmologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253915,Pathologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253917,Diagnostic and Interventional Radiologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253918,Radiation Oncologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+253999,Medical Practitioners nec,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254111,Midwife,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254211,Nurse Educator,NS,NS,S,NS,R,NS,NS,S,S,True,False,True,True,False,True,3
+254212,Nurse Researcher,NS,NS,NS,S,S,NS,NS,S,S,True,False,True,True,False,True,3
+254311,Nurse Manager,NS,NS,NS,NS,R,NS,NS,NS,NS,False,False,True,True,False,True,1
+254411,Nurse Practitioner,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254412,Registered Nurse (Aged Care),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254413,Registered Nurse (Child and Family Health),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254414,Registered Nurse (Community Health),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254415,Registered Nurse (Critical Care and Emergency),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254416,Registered Nurse (Developmental Disability),S,S,S,S,NS,NS,NS,NS,NS,True,True,False,True,True,True,5
+254417,Registered Nurse (Disability and Rehabilitation),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254418,Registered Nurse (Medical),R,R,R,R,R,R,R,R,S,True,True,False,True,True,True,5
+254421,Registered Nurse (Medical Practice),R,R,R,R,R,R,R,R,S,True,True,False,True,True,True,5
+254422,Registered Nurse (Mental Health),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254423,Registered Nurse (Perioperative),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254424,Registered Nurse (Surgical),R,R,R,R,R,R,R,R,S,True,True,False,True,True,True,5
+254425,Registered Nurse (Paediatrics),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+254499,Registered Nurses nec,NS,NS,NS,NS,NS,NS,NS,S,NS,True,True,False,True,False,True,3
+261111,ICT Business Analyst,NS,NS,NS,NS,NS,NS,NS,S,NS,True,True,False,True,False,True,3
+261112,Systems Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+261113,User Experience Designer (ICT),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+261211,Multimedia Specialist,NS,NS,NS,NS,NS,NS,NS,S,S,True,True,False,True,False,True,3
+261212,Web Developer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+261311,Analyst Programmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+261312,Developer Programmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+261313,Software Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+261314,Software Tester,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+261315,Cyber Security Engineer,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+261316,Devops Engineer,S,S,S,S,S,S,S,NS,S,True,False,False,False,True,True,4
+261317,Penetration Tester,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+261399,Software and Applications Programmers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+262111,Database Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+262113,Systems Administrator,NS,NS,NS,NS,NS,NS,NS,S,NS,True,False,True,True,False,True,3
+262114,Cyber Governance Risk and Compliance Specialist,S,S,S,S,S,S,S,NS,S,True,False,False,False,True,True,4
+262115,Cyber Security Advice and Assessment Specialist,NS,NS,NS,NS,NS,NS,NS,S,S,True,False,False,False,False,True,2
+262116,Cyber Security Analyst,NS,NS,NS,S,S,NS,NS,NS,S,True,False,False,False,False,True,2
+262117,Cyber Security Architect,S,S,S,S,S,S,NS,NS,S,True,False,False,False,True,True,4
+262118,Cyber Security Operations Coordinator,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+263111,Computer Network and Systems Engineer,NS,NS,NS,NS,NS,NS,NS,S,NS,True,True,False,True,False,True,3
+263112,Network Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+263113,Network Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+263211,ICT Quality Assurance Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+263212,ICT Support Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+263213,ICT Systems Test Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+263299,ICT Support and Test Engineers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+263311,Telecommunications Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+263312,Telecommunications Network Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+271111,Barrister,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+271214,Intellectual Property Lawyer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+271299,Judicial and Other Legal Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+271311,Solicitor,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+272111,Careers Counsellor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+272112,Drug and Alcohol Counsellor,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+272113,Family and Marriage Counsellor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+272114,Rehabilitation Counsellor,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+272115,Student Counsellor,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+272199,Counsellors nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+272211,Minister of Religion,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+272311,Clinical Psychologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+272312,Educational Psychologist,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+272313,Organisational Psychologist,S,S,S,S,S,S,S,NS,S,True,True,False,True,True,True,5
+272314,Psychotherapist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+272399,Psychologists nec,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+272411,Historian,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+272412,Interpreter,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+272413,Translator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+272414,Archaeologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+272499,Social Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+272511,Social Worker,NS,NS,R,NS,S,NS,NS,S,S,True,True,False,True,False,True,3
+272611,Community Arts Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+272612,Recreation Officer / Recreation Coordinator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+272613,Welfare Worker,NS,NS,R,NS,NS,NS,NS,S,NS,False,False,True,True,False,True,1
+311112,Agricultural and Agritech Technician,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+311113,Animal Husbandry Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+311114,Aquaculture or Fisheries Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+311115,Irrigation Designer,S,S,S,S,S,S,S,NS,NS,True,False,False,False,True,True,4
+311211,Anaesthetic Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+311212,Cardiac Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+311213,Medical Laboratory Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+311214,Operating Theatre Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+311215,Pharmacy Technician,R,R,R,R,R,R,R,S,S,True,False,True,True,True,True,5
+311216,Pathology Collector / Phlebotomist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+311217,Respiratory Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+311299,Medical Technicians nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+311311,Fisheries Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+311312,Meat Inspector,S,S,S,S,S,S,S,NS,NS,True,False,True,True,True,True,5
+311313,Biosecurity Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+311314,Primary Products Quality Assurance Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+311399,Primary Products Assurance and Inspection Officers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+311411,Chemistry Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+311412,Earth Science Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+311413,Life Science Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+311414,School Laboratory Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+311415,Hydrographer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+311499,Science Technicians nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+312111,Architectural Draftsperson,NS,NS,NS,NS,NS,NS,NS,S,NS,True,False,True,True,False,True,3
+312112,Building Associate,NS,NS,NS,NS,NS,NS,NS,S,NS,True,False,False,False,False,True,2
+312113,Building Inspector,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+312114,Construction Estimator,R,S,R,R,R,S,R,NS,NS,True,False,False,True,True,True,4
+312115,Plumbing Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+312116,Surveying or Spatial Science Technician,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+312199,"Architectural, Building and Surveying Technicians nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+312211,Civil Engineering Draftsperson,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+312212,Civil Engineering Technician,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+312311,Electrical Engineering Draftsperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+312312,Electrical Engineering Technician,M,M,M,M,M,M,M,M,S,True,True,False,True,True,True,5
+312411,Electronic Engineering Draftsperson,NS,S,NS,NS,NS,S,NS,NS,NS,False,False,False,False,False,False,0
+312412,Electronic Engineering Technician,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+312511,Mechanical Engineering Draftsperson,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+312512,Mechanical Engineering Technician,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+312611,Safety Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+312911,Maintenance Planner,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+312912,Metallurgical or Materials Technician,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+312913,Mine Deputy,NS,NS,NS,NS,NS,R,NS,NS,NS,True,False,True,True,False,True,3
+312914,Other Draftsperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+312999,Building and Engineering Technicians nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+313111,Hardware Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+313112,ICT Customer Support Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+313113,Web Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+313199,ICT Support Technicians nec,NS,NS,NS,NS,NS,NS,NS,S,NS,True,False,True,True,False,True,3
+313211,Radiocommunications Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+313212,Telecommunications Field Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+313213,Telecommunications Network Planner,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+313214,Telecommunications Technical Officer or Technologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,True,False,True,False,True,3
+321111,Automotive Electrician,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+321211,Motor Mechanic (General),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+321212,Diesel Motor Mechanic,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+321213,Motorcycle Mechanic,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+321214,Small Engine Mechanic,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+322111,Blacksmith,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+322112,Electroplater,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+322113,Farrier,S,S,S,S,S,S,S,NS,S,True,False,True,True,True,True,5
+322114,Metal Casting Trades Worker,S,S,S,S,S,S,S,NS,NS,True,False,False,False,True,True,4
+322115,Metal Polisher,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+322211,Sheetmetal Worker,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+322311,Metal Fabricator,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+322312,Pressure Welder,S,S,S,S,S,S,NS,NS,NS,True,True,False,True,True,True,5
+322313,Welder (First Class),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+323111,Aircraft Maintenance Engineer (Avionics),S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+323112,Aircraft Maintenance Engineer (Mechanical),S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+323113,Aircraft Maintenance Engineer (Structures),S,S,S,S,S,S,NS,S,NS,True,False,True,True,True,True,5
+323211,Fitter (General),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+323212,Fitter and Turner,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+323213,Fitter-Welder,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+323214,Metal Machinist (First Class),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+323215,"Textile, Clothing and Footwear Mechanic",NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+323299,Metal Fitters and Machinists nec,NS,S,NS,NS,NS,NS,NS,S,NS,True,False,True,True,False,True,3
+323311,Engraver,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+323312,Gunsmith,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+323313,Locksmith,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+323314,Precision Instrument Maker and Repairer,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+323315,Saw Doctor,S,S,S,S,S,S,S,NS,NS,False,False,False,False,True,False,2
+323316,Watch and Clock Maker and Repairer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+323411,Engineering Patternmaker,S,S,S,S,S,S,S,NS,NS,True,False,False,False,True,True,4
+323412,Toolmaker,S,S,S,S,S,S,S,NS,S,True,False,True,True,True,True,5
+324111,Panelbeater,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+324211,Vehicle Body Builder,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+324212,Vehicle Trimmer,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+324311,Vehicle Painter,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+331111,Bricklayer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+331112,Stonemason,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+331211,Carpenter and Joiner,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+331212,Carpenter,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+331213,Joiner,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+332111,Floor Finisher,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+332211,Painter,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+333111,Glazier,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+333211,Plasterer (Wall and Ceiling),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+333212,Renderer (Solid Plaster),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+333311,Roof Tiler,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+333411,Wall and Floor Tiler,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+334112,Airconditioning and Mechanical Services Plumber,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+334113,Drainer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+334114,Gasfitter,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+334115,Roof Plumber,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+334116,Plumber (General),S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+334117,Fire Protection Plumber,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+341111,Electrician (General),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+341112,Electrician (Special Class),S,S,S,S,S,S,NS,S,NS,True,True,False,True,True,True,5
+341113,Lift Mechanic,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+342111,Airconditioning and Refrigeration Mechanic,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+342211,Electrical Linesworker / Electrical Line Mechanic,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+342212,Technical Cable Jointer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+342311,Business Machine Mechanic,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+342312,Communications Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+342313,Electronic Equipment Trades Worker,R,R,R,R,R,R,R,R,S,True,True,False,True,True,True,5
+342314,Electronic Instrument Trades Worker (General),S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+342315,Electronic Instrument Trades Worker (Special Class),S,S,S,S,S,S,S,S,NS,True,True,False,True,True,True,5
+342411,Cabler (Data and Telecommunications),S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+342412,Telecommunications Cable Jointer,S,S,S,S,S,S,S,NS,S,True,False,False,False,True,True,4
+342413,Telecommunications Linesworker / Telecommunications Line Mechanic,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+342414,Telecommunications Technician,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+351111,Baker,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+351112,Pastrycook,R,R,R,R,R,R,R,R,S,True,False,True,True,True,True,5
+351211,Butcher or Smallgoods Maker,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+351311,Chef,R,R,R,R,R,R,R,S,S,True,True,False,True,True,True,5
+351411,Cook,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+361111,Dog Handler or Trainer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+361112,Horse Trainer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+361113,Pet Groomer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+361114,Zookeeper,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+361115,Kennel Hand,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+361116,Track Rider,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+361199,Animal Attendants and Trainers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+361311,Veterinary Nurse,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+362111,Florist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+362312,Sports Turf Manager,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+362313,Sports Turf Trades Worker,NS,NS,NS,NS,S,NS,NS,NS,NS,False,False,False,False,False,False,0
+362411,Nurseryperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+362511,Arborist,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+362512,Tree Worker,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+362611,Gardener (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+362711,Landscape Gardener,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+362712,Irrigation Technician,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+363111,Aquaculture Supervisor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363112,Fishing Leading Hand,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363113,Forestry Operations Supervisor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363114,Horticultural Supervisor or Specialist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363115,Senior Broadacre Crop and Livestock Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363116,Senior Broadacre Crop Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363117,Vineyard Supervisor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363199,"Senior Aquaculture, Crop and Forestry Workers nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363211,Senior Beef Cattle Station Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363212,Senior Cattle and Sheep Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363213,Senior Dairy Cattle Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363214,Senior Piggery Stockperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363215,Senior Sheep Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363299,Senior Livestock Farm Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363311,Shearer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+363312,Wool Classer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+391111,Hairdresser,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+392111,Print Finisher,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+392112,Screen Printer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+392211,Graphic Pre-press Trades Worker,S,S,S,S,S,S,S,NS,S,True,False,False,False,True,True,4
+392311,Printing Machinist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+392312,Small Offset Printer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+393111,Canvas Goods Fabricator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+393112,Leather Goods Maker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+393113,Sail Maker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+393114,Shoemaker,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+393211,Apparel Cutter,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+393212,Clothing Patternmaker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+393213,Dressmaker or Tailor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+393299,Clothing Trades Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+393311,Upholsterer,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+394112,Cabinet Maker,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+394113,Furniture Maker,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+394211,Furniture Finisher,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+394212,Picture Framer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+394213,Wood Machinist,S,S,S,S,S,S,S,NS,NS,True,False,True,True,True,True,5
+394214,Wood Turner,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+394299,Wood Machinists and Other Wood Trades Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+399111,Boat Builder and Repairer,S,S,S,S,S,S,S,S,S,True,True,False,True,True,True,5
+399112,Shipwright,S,S,S,S,S,S,S,S,NS,True,True,False,True,True,True,5
+399211,Chemical Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+399212,Gas or Petroleum Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,True,False,True,2
+399213,Power Generation Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+399311,Gallery or Museum Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+399312,Library Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+399411,Jeweller,S,S,S,S,S,S,S,S,S,False,False,True,True,True,True,3
+399511,Broadcast Transmitter Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+399512,"Camera Operator (Film, Television or Video)",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+399513,Light Technician,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+399514,Make Up Artist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+399515,Musical Instrument Maker or Repairer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+399516,Sound Technician,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+399517,Television Equipment Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+399599,Performing Arts Technicians nec,NS,S,NS,NS,NS,S,NS,NS,NS,True,False,True,True,False,True,3
+399611,Signwriter,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+399911,Diver,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+399912,Interior Decorator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+399913,Optical Dispenser / Dispensing Optician,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+399914,Optical Mechanic,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+399915,Photographer's Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+399916,Plastics Technician,NS,S,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+399918,Fire Protection Equipment Technician,R,R,R,R,R,R,R,R,S,True,False,False,False,True,True,4
+399999,Technicians and Trades Workers nec,NS,S,NS,NS,NS,NS,NS,S,NS,True,False,False,False,False,True,2
+411111,Ambulance Officer,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+411112,Intensive Care Ambulance Paramedic,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+411211,Dental Hygienist,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+411212,Dental Prosthetist,S,S,S,S,S,S,S,NS,S,True,False,False,False,True,True,4
+411213,Dental Technician,S,S,S,S,S,S,S,S,S,True,False,True,True,True,True,5
+411214,Dental Therapist,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+411311,Diversional Therapist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+411411,Enrolled Nurse,R,R,R,R,R,R,R,R,S,True,False,True,True,True,True,5
+411412,Mothercraft Nurse,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+411511,Aboriginal and Torres Strait Islander Health Worker,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+411611,Massage Therapist,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+411711,Community Worker,NS,NS,NS,NS,NS,S,NS,S,NS,True,False,True,True,False,True,3
+411712,Disabilities Services Officer,NS,R,NS,NS,NS,S,NS,S,NS,False,False,True,True,False,True,1
+411713,Family Support Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+411714,Parole or Probation Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+411715,Residential Care Officer,NS,NS,NS,NS,NS,S,NS,S,NS,True,False,True,True,False,True,3
+411716,Youth Worker,NS,NS,NS,NS,NS,S,NS,S,NS,True,False,True,True,False,True,3
+421111,Child Care Worker,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+421112,Family Day Care Worker,NS,R,NS,NS,R,NS,NS,NS,S,False,False,False,False,False,False,0
+421113,Nanny,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+421114,Out of School Hours Care Worker,R,R,R,R,R,R,R,R,S,True,False,False,False,True,True,4
+422111,Aboriginal and Torres Strait Islander Education Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+422112,Integration Aide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+422115,Preschool Aide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+422116,Teachers' Aide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+423111,Aged or Disabled Carer,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+423211,Dental Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+423311,Hospital Orderly,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+423312,Nursing Support Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+423313,Personal Care Assistant,NS,NS,NS,NS,NS,S,NS,S,NS,False,False,False,False,False,False,0
+423314,Therapy Aide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+423411,Child or Youth Residential Care Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+423412,Hostel Parent,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+423413,Refuge Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+431111,Bar Attendant,NS,NS,NS,NS,NS,NS,NS,S,NS,False,False,False,False,False,False,0
+431112,Barista,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+431311,Gaming Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+431411,Hotel Service Manager,NS,NS,NS,NS,NS,S,NS,S,NS,True,False,False,False,False,True,2
+431511,Waiter,NS,NS,NS,NS,NS,NS,NS,S,NS,False,False,False,False,False,False,0
+441211,Emergency Service Worker,NS,S,NS,NS,S,NS,NS,NS,NS,False,False,False,True,False,True,0
+441212,Fire Fighter,NS,S,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+441312,Police Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+442111,Prison Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+442213,Crowd Controller,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+442214,Private Investigator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+442216,Security Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+442217,Security Officer,NS,S,NS,NS,S,NS,NS,S,NS,False,False,False,False,False,False,0
+451111,Beauty Therapist,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+451211,Driving Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+451311,Funeral Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451399,Funeral Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+451411,Gallery or Museum Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451412,Tour Guide,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+451511,Natural Remedy Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451512,Weight Loss Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451513,Herbalist (Western),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451611,Tourist Information Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451612,Travel Consultant,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+451711,Flight Attendant,R,R,R,R,R,R,R,R,S,True,False,False,True,True,True,4
+451799,Travel Attendants nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451811,Civil Celebrant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451814,Body Artist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451815,First Aid Trainer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+451816,Religious Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+451899,Personal Service Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452111,Fitness Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452211,Bungy Jump Master,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452212,Fishing Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452213,Hunting Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452214,Mountain or Glacier Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452215,Outdoor Adventure Instructor,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+452216,Trekking Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452217,Whitewater Rafting Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452299,Outdoor Adventure Guides nec,S,S,S,S,S,S,S,NS,NS,False,False,False,False,True,False,2
+452311,Diving Instructor (Open Water),NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+452312,Gymnastics Coach or Instructor,S,S,S,S,S,S,S,S,S,False,False,True,True,True,True,3
+452313,Horse Riding Coach or Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+452314,Snowsport Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,True,True,False,True,1
+452315,Swimming Coach or Instructor,S,S,S,S,S,S,S,S,S,False,False,True,True,True,True,3
+452316,Tennis Coach,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,True,False,True,False,True,1
+452317,Other Sports Coach or Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+452318,Dog and Horse Racing Official,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452321,Sports Development Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+452322,Sports Umpire,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452323,Other Sports Official,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+452413,Jockey,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+452414,Lifeguard,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+511111,Contract Administrator,NS,NS,NS,NS,S,S,NS,NS,NS,True,False,True,True,False,True,3
+511112,Program or Project Administrator,NS,NS,NS,NS,NS,S,NS,S,NS,True,False,True,True,False,True,3
+512111,Office Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+512211,Health Practice Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+512299,Practice Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+521111,Personal Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+521211,Secretary (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+521212,Legal Secretary,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+531111,General Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+532111,Data Entry Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+532112,Machine Shorthand Reporter,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+532113,Word Processing Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+541111,Call or Contact Centre Team Leader,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+541112,Call or Contact Centre Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+541211,Information Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+542111,Receptionist (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+542112,Admissions Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+542113,Hotel or Motel Receptionist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+542114,Medical Receptionist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+551111,Accounts Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+551112,Cost Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+551211,Bookkeeper,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+551311,Payroll Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+552111,Bank Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+552211,Credit or Loans Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+552311,Bookmaker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+552312,Insurance Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+552313,Money Market Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+552314,Statistical Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+591112,Production Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+591113,Purchasing Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+591115,Stock Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+591116,Warehouse Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+591117,Order Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+591211,Despatching and Receiving Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+591212,Import-Export Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599111,Conveyancer,S,S,S,S,S,S,S,S,S,True,False,False,False,True,True,4
+599112,Legal Executive,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599211,Clerk of Court,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,False,False,False,True,2
+599212,Court Bailiff or Sheriff,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599213,Court Orderly,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599214,Law Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599215,Trust Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599311,Debt Collector,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599411,Human Resource Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599511,Customs Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599512,Immigration Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599513,Motor Vehicle Licence Examiner,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599514,"Invasive Pest, Weed and Disease Inspector",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599515,Social Security Assessor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599516,Taxation Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599517,Train Examiner,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599518,Transport Operations Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599521,Water Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599599,Inspectors and Regulatory Officers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599611,Insurance Investigator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599612,Insurance Loss Adjuster,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+599613,Insurance Risk Surveyor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599711,Library Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599912,"Production Assistant (Film, Television, Radio or Stage)",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599913,Proof Reader,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599914,Radio Despatcher,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599915,Clinical Coder,S,S,S,S,S,S,S,S,S,True,False,False,True,True,True,4
+599916,Facilities Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+599999,Clerical and Administrative Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+611111,Auctioneer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+611112,Stock and Station Agent,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+611211,Insurance Agent,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+611311,Sales Representative (Building and Plumbing Supplies),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+611312,Sales Representative (Business Services),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+611313,Sales Representative (Motor Vehicle Parts and Accessories),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+611314,Sales Representative (Personal and Household Goods),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+611399,Sales Representatives nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+612111,Business Broker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+612112,Property Manager,NS,NS,NS,NS,NS,S,NS,S,NS,False,False,False,True,False,True,0
+612113,Real Estate Agency Principal / Real Estate Agency Licensee,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+612114,Real Estate Agent,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+612115,Real Estate Representative,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,True,False,True,0
+621311,Motor Vehicle or Caravan Salesperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+621312,Motor Vehicle Parts Interpreter / Automotive Parts Salesperson,NS,NS,NS,S,NS,NS,S,S,S,False,False,False,False,False,False,0
+621411,Pharmacy Sales Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+621511,Retail Supervisor,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+639211,Retail Buyer,NS,NS,NS,NS,NS,NS,NS,NS,NS,True,False,True,True,False,True,3
+639212,Wool Buyer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+639511,Visual Merchandiser,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+639911,Other Sales Support Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711111,Clay Products Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711112,Concrete Products Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711113,Glass Production Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711114,Stone Processing Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711199,"Clay, Concrete, Glass and Stone Processing Machine Operators nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711211,Industrial Spraypainter,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+711311,Paper Products Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711313,Sawmilling Operator,S,S,S,S,S,S,S,NS,S,False,False,False,False,True,False,2
+711314,Other Wood Processing Machine Operator,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+711411,Photographic Developer and Printer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711511,Plastic Cablemaking Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711512,Plastic Compounding and Reclamation Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711513,Plastics Fabricator or Welder,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711514,Plastics Production Machine Operator (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711515,Reinforced Plastic and Composite Production Worker,S,S,S,S,S,S,S,NS,NS,False,False,False,False,True,False,2
+711516,Rubber Production Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711599,Plastics and Rubber Production Machine Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711611,Sewing Machinist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711711,Footwear Production Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711712,Hide and Skin Processing Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711713,Knitting Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711714,Textile Dyeing and Finishing Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711715,Weaving Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711716,Yarn Carding and Spinning Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711799,Textile and Footwear Production Machine Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711911,Chemical Production Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711912,Motion Picture Projectionist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711913,Sand Blaster,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711914,Sterilisation Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+711999,Machine Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712111,"Crane, Hoist or Lift Operator",S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+712211,Driller,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+712212,Miner,R,R,R,R,R,R,R,NS,NS,False,False,False,False,True,False,2
+712213,Shot Firer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712311,Engineering Production Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712911,Boiler or Engine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712912,Bulk Materials Handling Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712913,Cement Production Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712914,Concrete Batching Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712915,Concrete Pump Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712916,Paper and Pulp Mill Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712917,Railway Signal Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712918,Train Controller,NS,S,NS,NS,NS,S,NS,NS,NS,False,False,False,False,False,False,0
+712921,Waste Water or Water Plant Operator,NS,S,S,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712922,Weighbridge Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+712999,Stationary Plant Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+721111,Agricultural and Horticultural Mobile Plant Operator,R,R,R,R,R,R,R,R,S,False,False,False,False,True,False,2
+721112,Logging Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+721211,Earthmoving Plant Operator (General),R,R,R,R,R,R,R,R,S,False,False,False,False,True,False,2
+721212,Backhoe Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+721213,Bulldozer Operator,S,S,S,S,S,S,S,S,NS,False,False,False,False,True,False,2
+721214,Excavator Operator,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+721215,Grader Operator,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+721216,Loader Operator,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+721311,Forklift Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+721911,Aircraft Baggage Handler and Airline Ground Crew,NS,NS,NS,NS,NS,S,NS,S,NS,False,False,False,False,False,False,0
+721912,Linemarker,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+721913,Paving Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+721914,Railway Track Plant Operator,S,S,S,S,S,S,S,NS,NS,False,False,False,False,True,False,2
+721915,Road Roller Operator,S,S,S,S,S,S,S,S,NS,False,False,False,False,True,False,2
+721916,Streetsweeper Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+721999,Mobile Plant Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+731111,Chauffeur,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+731112,Taxi Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+731199,Automobile Drivers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+731211,Bus Driver,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+731212,Charter and Tour Bus Driver,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+731213,Passenger Coach Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+731311,Train Driver,R,R,R,R,R,R,R,R,S,False,False,False,False,True,False,2
+731312,Tram Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+732111,Delivery Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+733111,Truck Driver (General),S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+733112,Aircraft Refueller,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+733113,Furniture Removalist,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+733114,Tanker Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+733115,Tow Truck Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+741111,Storeperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+811611,Carpet Cleaner,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+821311,Fencer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+821411,Building Insulation Installer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+821412,Home Improvement Installer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+821611,Railway Track Worker,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+821711,Construction Rigger,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+821712,Scaffolder,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+821713,Steel Fixer,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+821714,Structural Steel Erector,S,S,S,S,S,S,NS,S,S,False,False,False,False,True,False,2
+821911,Crane Chaser,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+831211,Meat Boner and Slicer,NS,S,NS,NS,NS,S,NS,NS,NS,False,False,False,False,False,False,0
+831212,Slaughterer,NS,S,NS,NS,NS,S,NS,NS,NS,False,False,False,False,False,False,0
+839311,Product Examiner,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+839312,Product Grader,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+839313,Product Tester,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842211,Cotton Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842214,"Grain, Oilseed, Pulse and Pasture Farm Worker",NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842217,Sugar Cane Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842222,Vineyard Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842311,Beef Cattle Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842312,Cattle and Sheep Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842313,Dairy Cattle Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842314,Livestock Husbandry Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842315,Piggery Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842316,Poultry Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+842317,Sheep Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+843111,Forestry Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+843112,Logging Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+843113,Tree Faller,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+843411,Pest Control Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+899211,Deck Hand,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+899212,Fishing Hand,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+899411,Motor Vehicle Parts and Accessories Fitter (General),S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+899412,Autoglazier,S,S,S,S,S,S,S,S,S,False,False,False,False,True,False,2
+899413,Exhaust and Muffler Repairer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+899414,Radiator Repairer,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+899415,Tyre Fitter,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+899511,Printer's Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
+899512,Printing Table Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,False,False,False,False,False,False,0
