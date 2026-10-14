@@ -15,6 +15,8 @@ make all          # or: python run_all.py
 
 Outputs: `outputs/figures/*.png`, `outputs/tables/*.csv`, `data/processed/*.csv`.
 
+**Currency:** Monetary tables and chart axes use **AUD** with **USD** equivalents from the latest **RBA Table F11** AUD/USD rate recorded in [`data/manifest.json`](data/manifest.json) (`aud_usd`). All conversions must go through [`src/fx.py`](src/fx.py) — do not hard-code rates in new outputs.
+
 ## Data sources used
 
 | Provider | Dataset | Role in this project |
@@ -37,8 +39,9 @@ Outputs: `outputs/figures/*.png`, `outputs/tables/*.csv`, `data/processed/*.csv`
 | ABS 6306.0 | EEH May 2025, DO011 Table 1 | **National** average weekly cash earnings by 4-digit ANZSCO occupation |
 | ABS 6530.0 | HES 2015-16 summary | Lone-person **non-housing** spending anchor (CPI-scaled living costs) |
 | ATO | [Resident tax rates 2025–26](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents) | After-tax income (+ 2% Medicare levy in code; super excluded) |
+| RBA | [Table F11 — Exchange rates](https://www.rba.gov.au/statistics/tables/) (`f11-data.csv`) | **AUD/USD** for USD columns and chart labels (latest monthly observation in manifest) |
 
-Full URLs, access dates, and SHA-256 hashes: [`data/manifest.json`](data/manifest.json) and [`data/SOURCES.md`](data/SOURCES.md).
+Full URLs, access dates, SHA-256 hashes, and the active **AUD/USD** rate: [`data/manifest.json`](data/manifest.json) and [`data/SOURCES.md`](data/SOURCES.md).
 
 Observed medians by capital: [`outputs/tables/median_weekly_rents_by_capital.csv`](outputs/tables/median_weekly_rents_by_capital.csv) (`rent_observed` flag in [`outputs/tables/affordability_index.csv`](outputs/tables/affordability_index.csv)).
 
@@ -81,18 +84,18 @@ IVI measures **advertised vacancies** (not hires) and uses a different ANZSCO ag
 
 ## 2. Earnings by state / capital
 
-**AWE Nov 2025** — persons, full-time, adult, **ordinary time** earnings ($/week):
+**AWE Nov 2025** — persons, full-time, adult, **ordinary time** earnings (AUD/week, USD at RBA F11 **0.6977** on **30-Sep-2026**):
 
-| Rank | State | Capital | AWE ($/week) | YoY % |
+| Rank | State | Capital | AWE (AUD / USD per week) | YoY % |
 | ---: | --- | --- | ---: | ---: |
-| 1 | ACT | Canberra | **2,249.0** | 22.9 |
-| 2 | WA | Perth | 2,189.2 | 22.5 |
-| 3 | NSW | Sydney | 2,086.8 | 23.6 |
-| 8 | TAS | Hobart | 1,820.9 | 25.4 |
+| 1 | ACT | Canberra | **A$2,249 (US$1,569)** | 22.9 |
+| 2 | WA | Perth | A$2,189 (US$1,527) | 22.5 |
+| 3 | NSW | Sydney | A$2,087 (US$1,456) | 23.6 |
+| 8 | TAS | Hobart | A$1,821 (US$1,270) | 25.4 |
 
 ![AWE by state](outputs/figures/awe_by_state.png)
 
-**EEH May 2025** (all employees, average weekly total cash) ranks similarly, with ACT highest at **$1,899.7** — see [`outputs/tables/earnings_by_state.csv`](outputs/tables/earnings_by_state.csv). AWE is the headline series for **full-time adult ordinary time** as requested.
+**EEH May 2025** (all employees, average weekly total cash) ranks similarly, with ACT highest at **A$1,900 (US$1,325)** — see [`outputs/tables/earnings_by_state.csv`](outputs/tables/earnings_by_state.csv) (AUD and USD columns). AWE is the headline series for **full-time adult ordinary time** as requested.
 
 ---
 
@@ -115,16 +118,16 @@ IVI measures **advertised vacancies** (not hires) and uses a different ANZSCO ag
 
 **Observed median weekly rents** (official bond / rental-report sources; see table for periods):
 
-| Capital | Median $/week | Period | Observed? |
+| Capital | Median rent (AUD / USD per week) | Period | Observed? |
 | --- | ---: | --- | --- |
-| Sydney (NSW bonds) | **700** | Nov 2025 | Yes |
-| Melbourne | **580** | Sep quarter 2025 | Yes |
-| Brisbane | **620** | Sep quarter 2025 | Yes |
-| Perth | **700** | Nov 2025 | Yes |
-| Adelaide (metro) | **580** | Apr–Jun 2026 | Yes |
-| Hobart (Greater) | **530** | Nov 2025 | Yes |
-| Canberra | 765 | CPI fallback | No |
-| Darwin | 637 | CPI fallback | No |
+| Sydney (NSW bonds) | **A$700 (US$488)** | Nov 2025 | Yes |
+| Melbourne | **A$580 (US$405)** | Sep quarter 2025 | Yes |
+| Brisbane | **A$620 (US$433)** | Sep quarter 2025 | Yes |
+| Perth | **A$700 (US$488)** | Nov 2025 | Yes |
+| Adelaide (metro) | **A$580 (US$405)** | Apr–Jun 2026 | Yes |
+| Hobart (Greater) | **A$530 (US$370)** | Nov 2025 | Yes |
+| Canberra | A$765 (US$534) | CPI fallback | No |
+| Darwin | A$637 (US$444) | CPI fallback | No |
 
 ![CPI and rents](outputs/figures/cpi_and_rents_by_capital.png)
 
@@ -190,19 +193,36 @@ Occupation-level **disposable savings** by state capital:
 
 Profiles (ANZSCO 2022): Actuary 224111, Economist 224311, Financial Investment Adviser/Manager 222311–222312, **Financial dealer 2222** (proxy where no “financial analyst” line in EEH), Accountants 221111–221113, Data Analyst 224114, Data Scientist 224115. Demand/visa context: [`outputs/tables/professional_occupations_visa_demand.csv`](outputs/tables/professional_occupations_visa_demand.csv) (OSL 2025, CSOL, LIN 19/051 lists, IVI sub-major groups Aug 2025).
 
-### Rankings (central living costs, alone, all-dwellings median rent)
+### City ranking table (central living costs, alone, all-dwellings median rent)
 
-**Pattern:** For every profile in this set, **Darwin** ranks #1 and **Adelaide** ranks #8 on disposable savings — mainly **state pay relativity** (EEH scaling) vs rent, with **Canberra/NT rents imputed** from CPI (flagged).
+Eight capitals ranked by **mean disposable savings** across Economist, Data Analyst, Financial Investment Adviser, Actuary, and Accountant (General) — same scenario as above. Values are **AUD/week** with **USD** at RBA F11 **0.6977** (30-Sep-2026). Darwin and Canberra use **CPI-imputed** medians (`rent_median_observed = false` in CSV).
 
-| Occupation | Best city | Disposable $/week | Worst city | Disposable $/week |
+| Rank | Capital | Mean (AUD / USD) | Economist | Data Analyst | Fin. investment adviser | Actuary | Accountant |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | Darwin † | **A$507 (US$354)** | 603 / 421 | 529 / 369 | 663 / 463 | 505 / 352 | 234 / 163 |
+| 2 | Canberra † | A$384 (US$268) | 480 / 335 | 407 / 284 | 541 / 377 | 383 / 267 | 108 / 75 |
+| 3 | Perth | A$340 (US$237) | 430 / 300 | 360 / 251 | 493 / 344 | 337 / 235 | 80 / 56 |
+| 4 | Brisbane | A$329 (US$230) | 414 / 289 | 348 / 243 | 475 / 331 | 326 / 228 | 82 / 57 |
+| 5 | Melbourne | A$319 (US$223) | 401 / 280 | 337 / 235 | 459 / 320 | 316 / 221 | 81 / 56 |
+| 6 | Sydney | A$263 (US$184) | 349 / 244 | 282 / 197 | 410 / 286 | 261 / 182 | 15 / 10 |
+| 7 | Adelaide | A$213 (US$149) | 290 / 202 | 230 / 161 | 344 / 240 | 211 / 147 | −8 / −6 |
+| 8 | Hobart | A$210 (US$146) | 283 / 197 | 226 / 158 | 334 / 233 | 207 / 145 | −2 / −1 |
+
+† **Estimated rent** (CPI-imputed from NSW bond anchor).
+
+**Among capitals with observed bond/report medians only**, **Perth** leads on mean disposable savings (**A$340 / US$237** per week across these five occupations) — verified in [`outputs/tables/city_savings_ranking_by_occupation.csv`](outputs/tables/city_savings_ranking_by_occupation.csv). Darwin and Canberra rank higher overall because NT/ACT pay relativity is strong while their rents are imputed, not observed.
+
+### Occupation best / worst (same scenario)
+
+| Occupation | Best city | Disposable (AUD / USD per week) | Worst city | Disposable (AUD / USD per week) |
 | --- | --- | ---: | --- | ---: |
-| Accountant (General) 221111 | Darwin | **234** | Adelaide | **−8** (estimate) |
-| Economist 224311 | Darwin | **603** | Hobart | 283 |
-| Financial Investment Adviser 222311 | Darwin | **663** | Hobart | 334 |
-| Data Analyst 224114 | Darwin | **529** | Hobart | 226 |
-| Actuary 224111 | Darwin | **505** | Hobart | 207 |
+| Accountant (General) 221111 | Darwin | **A$234 (US$163)** | Adelaide | **A$−8 (US$−6)** |
+| Economist 224311 | Darwin | **A$603 (US$421)** | Hobart | A$283 (US$197) |
+| Financial Investment Adviser 222311 | Darwin | **A$663 (US$463)** | Hobart | A$334 (US$233) |
+| Data Analyst 224114 | Darwin | **A$529 (US$369)** | Hobart | A$226 (US$158) |
+| Actuary 224111 | Darwin | **A$505 (US$352)** | Hobart | A$207 (US$145) |
 
-Full grid (all scenarios/sensitivities): [`outputs/tables/savings_by_city_detail.csv`](outputs/tables/savings_by_city_detail.csv). Rankings table: [`outputs/tables/savings_rankings_alone_median_central.csv`](outputs/tables/savings_rankings_alone_median_central.csv).
+Full grid (all scenarios/sensitivities): [`outputs/tables/savings_by_city_detail.csv`](outputs/tables/savings_by_city_detail.csv) (AUD + USD columns). Per-occupation rankings: [`outputs/tables/savings_rankings_alone_median_central.csv`](outputs/tables/savings_rankings_alone_median_central.csv).
 
 ![Savings by city — accountant](outputs/figures/savings_by_city_accountant_alone_median.png)
 
@@ -219,7 +239,7 @@ Full grid (all scenarios/sensitivities): [`outputs/tables/savings_by_city_detail
 3. **Price levels** (CPI) vary modestly across capitals compared with **earnings** spreads; **Canberra** combines high AWE with a mid-range CPI, yielding the strongest **real earnings index** in this framework.  
 4. With **observed bond/report medians** for six capitals, **rent burden** is highest for **Canberra** and **Sydney** (~34%) on this crude measure; **Melbourne** is lower (~29%) at the Sep-2025 published median ($580/week). Hobart falls to **~29%** once Greater Hobart bond data ($530/week) replace CPI scaling.  
 5. **IVI** shows very large vacancy counts in clerical/call-centre and health/care groups; migrant planning should still prioritise **visa-list + shortage** alignment at 6-digit ANZSCO.  
-6. **Occupation-level savings** (EEH + ATO + observed rents): under the central scenario, **Darwin** leads disposable savings for finance/data/economics profiles modelled here; **Adelaide** is weakest (accountants can show **negative** central savings). See §5.
+6. **Occupation-level savings** (EEH + ATO + observed rents): under the central scenario, **Darwin** leads overall (imputed NT rent); among **observed-rent** capitals, **Perth** leads the five-profile mean; **Adelaide** is weakest (accountants can show **negative** central savings). See §5.
 
 ### Limitations
 
@@ -233,7 +253,7 @@ Full grid (all scenarios/sensitivities): [`outputs/tables/savings_by_city_detail
 
 ## Resumen en español
 
-Este repositorio analiza el mercado laboral australiano con datos oficiales descargables. **273** ocupaciones presentan escasez nacional; **227** en CSOL. AWE nov-2025: máximo **ACT (A$2.249)**, mínimo **Tasmania (A$1.821)**. **Nuevo (§5):** ahorro disponible semanal tras impuestos (ATO 2025-26 + Medicare 2 %), alquiler (medianas observadas o estimadas) y otros gastos (ancla HES 2015-16 escalada por IPC) para perfiles economía/finanzas/datos (p. ej. economista **224311**, analista de datos **224114**, contador **221111**). Con coste de vida central y alquiler mediano viviendo solo, **Darwin** encabeza el ranking para todos estos perfiles (p. ej. economista **~A$603/semana**); **Adelaide** queda última (contador **~−A$8/semana**, escenario central). Ingresos por ocupación: EEH may-2025 nacional escalado por estado (**estimación**). Confirmar reglas de visado en Home Affairs. Reproducir: `make all`. Fuentes en `data/SOURCES.md`.
+Este repositorio analiza el mercado laboral australiano con datos oficiales descargables. **273** ocupaciones presentan escasez nacional; **227** en CSOL. AWE nov-2025: máximo **ACT (A$2.249 / US$1.569)** y mínimo **Tasmania (A$1.821 / US$1.270)** al tipo **RBA F11 0,6977** (30-sep-2026). **§5:** tabla de ranking por capital ([`city_savings_ranking_by_occupation.csv`](outputs/tables/city_savings_ranking_by_occupation.csv)) — ocho capitales ordenadas por ahorro medio (economista, analista de datos, asesor de inversiones, actuario, contador); alquileres de **Darwin** y **Canberra** estimados por IPC. Entre capitales con alquiler **observado**, **Perth** lidera (media **~A$340 / US$237/semana**). Conversiones USD vía [`src/fx.py`](src/fx.py). Reproducir: `python run_all.py`. Fuentes en `data/SOURCES.md`.
 
 ---
 
@@ -241,7 +261,8 @@ Este repositorio analiza el mercado laboral australiano con datos oficiales desc
 
 ```
 src/download/     # Official downloads + manifest
-src/io/           # Parsers (ABS, JSA, PDF lists, observed capital rents)
+src/fx.py         # AUD↔USD helpers (required for any monetary output)
+src/io/           # Parsers (ABS, JSA, PDF lists, observed capital rents, RBA F11)
 src/analysis/     # Analysis steps → figures/tables
 data/raw/         # Downloaded files (large xlsx/pdf gitignored; re-fetch with make data)
 data/processed/   # Cleaned CSV + summary JSON
