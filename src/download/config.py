@@ -4,6 +4,10 @@ from __future__ import annotations
 
 ABS_BASE = "https://www.abs.gov.au"
 
+# RBA Table F11 — Exchange rates (historical CSV)
+RBA_F11_EXCHANGE_RATES_URL = "https://www.rba.gov.au/statistics/tables/csv/f11-data.csv"
+RBA_F11_LANDING_URL = "https://www.rba.gov.au/statistics/tables/"
+
 # Average Weekly Earnings — November 2025 (6302.0)
 AWE_RELEASE = "nov-2025"
 AWE_STATE_FILES = {

@@ -17,8 +17,8 @@
       "url": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
       "local_path": "data/raw/ato_tax_rates_australian_residents.html",
       "access_date": "2026-10-14",
-      "sha256": "4d4f29c5e6a6df865a552a5e5ddbe499ffbb9933519a894e6aa3321097edf0d2",
-      "bytes": 795766,
+      "sha256": "4a05c39b44cacc6e2cae2f62e38d97c64fc6e278ac2c8389e6cad352cef2e3f0",
+      "bytes": 795763,
       "notes": "Brackets implemented in src/io/ato_tax.py for reproducible after-tax income."
     },
     {
@@ -212,6 +212,16 @@
       "notes": ""
     },
     {
+      "key": "rba_f11_exchange_rates",
+      "description": "RBA Table F11 \u2014 indicative exchange rates (monthly; AUD/USD column)",
+      "url": "https://www.rba.gov.au/statistics/tables/csv/f11-data.csv",
+      "local_path": "data/raw/rba_f11_exchange_rates.csv",
+      "access_date": "2026-10-14",
+      "sha256": "d48965be657c09b6b104c7e15f90bbaca7836b4a812055929dd47cfd09881a97",
+      "bytes": 34083,
+      "notes": "Landing page: https://www.rba.gov.au/statistics/tables/"
+    },
+    {
       "key": "sa_private_rent_postcodes",
       "description": "SA Housing Trust Private Rent Report \u2014 metropolitan strata (CBS bonds)",
       "url": "https://data.sa.gov.au/data/dataset/8eb97a72-9919-448b-8de6-fc1530b3f7ec/resource/b4aa86f1-7efa-4690-9793-bd36df97ad29/download/private-rental-report-2026-06.xlsx",
@@ -261,5 +271,15 @@
       "bytes": 4169264,
       "notes": "Package landing page: https://housing-data-exchange.ahdap.org/dataset/west-australia-rental-bonds-data-2023-current"
     }
-  ]
+  ],
+  "aud_usd": {
+    "rate": 0.6977,
+    "rate_date": "30-Sep-2026",
+    "url": "https://www.rba.gov.au/statistics/tables/csv/f11-data.csv",
+    "source_key": "rba_f11_exchange_rates",
+    "local_path": "data/raw/rba_f11_exchange_rates.csv",
+    "access_date": "2026-10-14",
+    "sha256": "d48965be657c09b6b104c7e15f90bbaca7836b4a812055929dd47cfd09881a97",
+    "description": "RBA Table F11 \u2014 A$1=USD (WM/Reuters indicative, monthly)"
+  }
 }

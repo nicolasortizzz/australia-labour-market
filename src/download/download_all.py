@@ -14,7 +14,8 @@ if str(ROOT) not in sys.path:
 
 from src.download import config as cfg  # noqa: E402
 from src.download.http_utils import download_file, wayback_url  # noqa: E402
-from src.manifest import register_download  # noqa: E402
+from src.io.rba_fx import latest_aud_usd  # noqa: E402
+from src.manifest import register_download, set_aud_usd_rate  # noqa: E402
 
 RAW = ROOT / "data" / "raw"
 
@@ -277,6 +278,26 @@ def main() -> None:
     )
 
     download_sa_private_rent_postcodes()
+
+    rba_dest = RAW / "rba_f11_exchange_rates.csv"
+    download_file(cfg.RBA_F11_EXCHANGE_RATES_URL, rba_dest, timeout=120, retries=2)
+    rba_rec = register_download(
+        "rba_f11_exchange_rates",
+        "RBA Table F11 — indicative exchange rates (monthly; AUD/USD column)",
+        cfg.RBA_F11_EXCHANGE_RATES_URL,
+        rba_dest,
+        notes=f"Landing page: {cfg.RBA_F11_LANDING_URL}",
+    )
+    fx = latest_aud_usd(rba_dest)
+    set_aud_usd_rate(
+        rate=fx["aud_usd"],
+        rate_date=str(fx["rate_date"]),
+        url=cfg.RBA_F11_EXCHANGE_RATES_URL,
+        source_key="rba_f11_exchange_rates",
+        local_path=rba_rec.local_path,
+        sha256=rba_rec.sha256,
+        access_date=rba_rec.access_date,
+    )
 
     print("Downloads complete. See data/SOURCES.md")
 

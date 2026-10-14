@@ -54,6 +54,30 @@ def save_manifest(manifest: dict[str, Any]) -> None:
     write_sources_md(manifest)
 
 
+def set_aud_usd_rate(
+    rate: float,
+    rate_date: str,
+    url: str,
+    source_key: str,
+    local_path: str,
+    sha256: str,
+    access_date: str | None = None,
+) -> None:
+    """Record latest RBA F11 AUD/USD in manifest (used by src/fx.py)."""
+    manifest = load_manifest()
+    manifest["aud_usd"] = {
+        "rate": float(rate),
+        "rate_date": rate_date,
+        "url": url,
+        "source_key": source_key,
+        "local_path": local_path,
+        "access_date": access_date or today_iso(),
+        "sha256": sha256,
+        "description": "RBA Table F11 — A$1=USD (WM/Reuters indicative, monthly)",
+    }
+    save_manifest(manifest)
+
+
 def register_download(
     key: str,
     description: str,
@@ -96,6 +120,20 @@ def write_sources_md(manifest: dict[str, Any]) -> None:
         lines.append(
             f"| {s['key']} | {s['description']} | {url} | `{s['local_path']}` | "
             f"{s['access_date']} | `{s['sha256'][:16]}…` | {s['bytes']} | {notes} |"
+        )
+    aud = manifest.get("aud_usd")
+    if aud:
+        lines.extend(
+            [
+                "",
+                "## AUD/USD (RBA F11)",
+                "",
+                f"| Rate (USD per AUD) | Rate date | Access date | URL | Local file | SHA-256 |",
+                f"| ---: | --- | --- | --- | --- | --- |",
+                f"| **{aud['rate']}** | {aud['rate_date']} | {aud['access_date']} | "
+                f"{aud['url'].replace('|', '%7C')} | `{aud['local_path']}` | `{aud['sha256'][:16]}…` |",
+                "",
+            ]
         )
     lines.extend(
         [

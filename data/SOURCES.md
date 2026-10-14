@@ -5,7 +5,7 @@ Auto-generated on **2026-10-14** from `data/manifest.json`.
 | Key | Description | URL | Local file | Access date | SHA-256 | Size (bytes) | Notes |
 | --- | --- | --- | --- | --- | --- | ---: | --- |
 | abs_job_vacancies_states | ABS Job Vacancies Aug 2026 — state series (IVI fallback/supplement) | https://www.abs.gov.au/statistics/labour/jobs/job-vacancies-australia/aug-2026/6354002.xlsx | `data/raw/6354002.xlsx` | 2026-10-14 | `eea51cd4b290a6ec…` | 92382 |  |
-| ato_tax_rates_2025_26 | ATO — Australian resident tax rates (2025-26 brackets; Medicare levy noted on page) | https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents | `data/raw/ato_tax_rates_australian_residents.html` | 2026-10-14 | `4d4f29c5e6a6df86…` | 795766 | Brackets implemented in src/io/ato_tax.py for reproducible after-tax income. |
+| ato_tax_rates_2025_26 | ATO — Australian resident tax rates (2025-26 brackets; Medicare levy noted on page) | https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents | `data/raw/ato_tax_rates_australian_residents.html` | 2026-10-14 | `4a05c39b44cacc6e…` | 795763 | Brackets implemented in src/io/ato_tax.py for reproducible after-tax income. |
 | awe_act | ABS AWE Nov 2025 — Table 11 state ACT (trend) | https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011H.xlsx | `data/raw/awe_act_63020011H.xlsx` | 2026-10-14 | `03f7736521c9c621…` | 49433 |  |
 | awe_nsw | ABS AWE Nov 2025 — Table 11 state NSW (trend) | https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011A.xlsx | `data/raw/awe_nsw_63020011A.xlsx` | 2026-10-14 | `6850593e4786f578…` | 49405 |  |
 | awe_nt | ABS AWE Nov 2025 — Table 11 state NT (trend) | https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011G.xlsx | `data/raw/awe_nt_63020011G.xlsx` | 2026-10-14 | `ea591eab99835853…` | 49416 |  |
@@ -25,11 +25,19 @@ Auto-generated on **2026-10-14** from `data/manifest.json`.
 | legislation_lin_19051 | Federal Register of Legislation LIN 19/051 — MLTSSL/STSOL/ROL | https://www.legislation.gov.au/F2019L00278/2024-12-14/2024-12-14/text/original/pdf | `data/raw/legislation_lin_19051_skilled_occupations.pdf` | 2026-10-14 | `aeba15b650f6f566…` | 415742 |  |
 | nsw_rental_bond_lodgements | NSW Fair Trading — rental bond lodgements Nov 2025 | https://www.nsw.gov.au/sites/default/files/noindex/2025-12/rentalbond_lodgements_november_2025.xlsx | `data/raw/nsw_rental_bond_lodgements_nov2025.xlsx` | 2026-10-14 | `5c330d3c61c32611…` | 636734 |  |
 | qld_rta_median_rents | QLD RTA — quarterly median rents from bond lodgements | https://www.rta.qld.gov.au/sites/default/files/2023-04/rta-bond-statistics.xlsx | `data/raw/qld_rta_median_rents.xlsx` | 2026-10-14 | `5c3af9c21bb93b8a…` | 6254358 |  |
+| rba_f11_exchange_rates | RBA Table F11 — indicative exchange rates (monthly; AUD/USD column) | https://www.rba.gov.au/statistics/tables/csv/f11-data.csv | `data/raw/rba_f11_exchange_rates.csv` | 2026-10-14 | `d48965be657c09b6…` | 34083 | Landing page: https://www.rba.gov.au/statistics/tables/ |
 | sa_private_rent_postcodes | SA Housing Trust Private Rent Report — metropolitan strata (CBS bonds) | https://data.sa.gov.au/data/dataset/8eb97a72-9919-448b-8de6-fc1530b3f7ec/resource/b4aa86f1-7efa-4690-9793-bd36df97ad29/download/private-rental-report-2026-06.xlsx | `data/raw/sa_private_rent_by_postcode_2026-06.csv` | 2026-10-14 | `46d75059d4b2a86c…` | 95715 | Direct Data SA XLSX returned HTTP 403 from build environment; postcode strata CSV ingested from CC BY mirror of the same Private Rent Report release. |
 | slci_all_groups | ABS SLCI Jun 2026 — all groups index | https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/selected-living-cost-indexes-australia/jun-2026/646701.xlsx | `data/raw/646701.xlsx` | 2026-10-14 | `cb8190089914d2c8…` | 58028 |  |
 | tas_rental_bond_november_2025 | Tasmania rental bond lodgements — November 2025 (open data) | https://data.gov.au/data/dataset/a5096409-4702-468e-94a7-303951b4173b/resource/df29642c-5d80-47f1-9f93-d4ca802ab6c3/download/abs-report-november-2025.xlsx | `data/raw/tas_rental_bond_november_2025.xlsx` | 2026-10-14 | `663235927d1fef86…` | 209862 |  |
 | vic_rental_report_tables_sep2025 | VIC Homes Victoria Rental Report — tables Sep quarter 2025 (Melbourne median) | https://www.dffh.vic.gov.au/tables-rental-report-september-quarter-2025-excel | `data/raw/vic_rental_report_tables_sep2025.xlsx` | 2026-10-14 | `895746dee06f5199…` | 1156235 |  |
 | wa_rental_bonds | WA Consumer Protection rental bonds — monthly lodgement microdata (AHDAP) | https://ahdap-public-data.s3.ap-southeast-2.amazonaws.com/RentalBondsWA/wa-rental-bond-sep2026.zip | `data/raw/wa_rental_bonds.zip` | 2026-10-14 | `1832b9005c6454e0…` | 4169264 | Package landing page: https://housing-data-exchange.ahdap.org/dataset/west-australia-rental-bonds-data-2023-current |
+
+## AUD/USD (RBA F11)
+
+| Rate (USD per AUD) | Rate date | Access date | URL | Local file | SHA-256 |
+| ---: | --- | --- | --- | --- | --- |
+| **0.6977** | 30-Sep-2026 | 2026-10-14 | https://www.rba.gov.au/statistics/tables/csv/f11-data.csv | `data/raw/rba_f11_exchange_rates.csv` | `d48965be657c09b6…` |
+
 
 ## Unavailable or blocked at download time
 
