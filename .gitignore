@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.egg-info/
+dist/
+build/
+
+# Large raw downloads (re-download via make data)
+data/raw/**/*.xlsx
+data/raw/**/*.zip
+data/raw/**/*.pdf
+!data/raw/.gitkeep
+
+# Keep manifest and small processed outputs committed
+!data/processed/
+!data/SOURCES.md
+!data/manifest.json
