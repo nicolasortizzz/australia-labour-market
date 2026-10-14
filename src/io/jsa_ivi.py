@@ -23,11 +23,8 @@ def load_ivi_trend_national(path: Path) -> pd.DataFrame:
     meta = df[["ANZSCO_CODE", "OCCUPATION_TITLE"]].copy()
     meta.columns = ["anzsco", "title"]
     meta["anzsco"] = meta["anzsco"].astype(str).str.replace(r"\.0$", "", regex=True)
-    # National total is typically the rightmost date block under 'Australia' — use max across state cols for row 0
-    # For occupation rows, sum isn't correct; use Australia if present in column name
     aus_cols = [c for c in date_cols if "Australia" in str(c)]
     if not aus_cols:
-        # IVI file: date columns are plain timestamps; national row Level=1 ANZSCO 0
         national_row = df[df["ANZSCO_CODE"] == 0]
         if national_row.empty:
             national_row = df[df["Level"] == 1].head(1)
@@ -58,3 +55,30 @@ def load_ivi_occupation_latest(path: Path, state: str = "AUST") -> pd.DataFrame:
         prior = pd.to_numeric(sub[prior_col], errors="coerce")
         out["vacancy_yoy_pct"] = (out["vacancies"] - prior) / prior * 100.0
     return out.sort_values("vacancies", ascending=False).reset_index(drop=True)
+
+
+def load_ivi_group_by_state(path: Path, anzsco2: str) -> pd.DataFrame:
+    """Latest IVI vacancies for one ANZSCO2 sub-major group across states."""
+    df = pd.read_excel(path, sheet_name="Trend")
+    date_cols = _date_columns(df)
+    latest_col = sorted(date_cols)[-1]
+    sub = df[(df["Level"] == 3) & (df["ANZSCO_CODE"].astype(str) == str(anzsco2))].copy()
+    sub["vacancies"] = pd.to_numeric(sub[latest_col], errors="coerce")
+    state_map = {
+        "NSW": "NSW",
+        "VIC": "VIC",
+        "QLD": "QLD",
+        "SA": "SA",
+        "WA": "WA",
+        "TAS": "TAS",
+        "NT": "NT",
+        "ACT": "ACT",
+        "AUST": "AUST",
+    }
+    rows = []
+    for st in state_map:
+        row = sub[sub["State"] == st]
+        if row.empty:
+            continue
+        rows.append({"state": st, "ivi_vacancies": float(row["vacancies"].iloc[0])})
+    return pd.DataFrame(rows)
