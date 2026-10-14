@@ -1,0 +1,185 @@
+{
+  "generated": "2026-10-14",
+  "sources": [
+    {
+      "key": "abs_job_vacancies_states",
+      "description": "ABS Job Vacancies Aug 2026 \u2014 state series (IVI fallback/supplement)",
+      "url": "https://www.abs.gov.au/statistics/labour/jobs/job-vacancies-australia/aug-2026/6354002.xlsx",
+      "local_path": "data/raw/6354002.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "eea51cd4b290a6ec1dae78e57219888d2489851041f8249b4c8fc3c380d66cf2",
+      "bytes": 92382,
+      "notes": ""
+    },
+    {
+      "key": "awe_act",
+      "description": "ABS AWE Nov 2025 \u2014 Table 11 state ACT (trend)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011H.xlsx",
+      "local_path": "data/raw/awe_act_63020011H.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "03f7736521c9c621ba60dd05e883f0173dfc7e9079cd9043dfa51ac3fbe155bf",
+      "bytes": 49433,
+      "notes": ""
+    },
+    {
+      "key": "awe_nsw",
+      "description": "ABS AWE Nov 2025 \u2014 Table 11 state NSW (trend)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011A.xlsx",
+      "local_path": "data/raw/awe_nsw_63020011A.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "6850593e4786f578ca362766dbaa686ec000b3fd2bc09934ef2ac7222a35e6e4",
+      "bytes": 49405,
+      "notes": ""
+    },
+    {
+      "key": "awe_nt",
+      "description": "ABS AWE Nov 2025 \u2014 Table 11 state NT (trend)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011G.xlsx",
+      "local_path": "data/raw/awe_nt_63020011G.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "ea591eab9983585358bfb1a055ffa896ada52cd7ebfb9fa558a8057ab021621d",
+      "bytes": 49416,
+      "notes": ""
+    },
+    {
+      "key": "awe_qld",
+      "description": "ABS AWE Nov 2025 \u2014 Table 11 state QLD (trend)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011C.xlsx",
+      "local_path": "data/raw/awe_qld_63020011C.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "66ba4378f7e992c14ab25b2b240edf6f60e57fcbe8811d75b331b5073b31536f",
+      "bytes": 49428,
+      "notes": ""
+    },
+    {
+      "key": "awe_sa",
+      "description": "ABS AWE Nov 2025 \u2014 Table 11 state SA (trend)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011D.xlsx",
+      "local_path": "data/raw/awe_sa_63020011D.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "e49670e64c73769bf17c5fbca57163ec8535050b9e951881b78471680a209ed9",
+      "bytes": 49406,
+      "notes": ""
+    },
+    {
+      "key": "awe_tas",
+      "description": "ABS AWE Nov 2025 \u2014 Table 11 state TAS (trend)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011F.xlsx",
+      "local_path": "data/raw/awe_tas_63020011F.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "0f434d40669d15ebbd5c562b92b579c65d77a61e326069110b511e4b8cbc33d8",
+      "bytes": 49428,
+      "notes": ""
+    },
+    {
+      "key": "awe_vic",
+      "description": "ABS AWE Nov 2025 \u2014 Table 11 state VIC (trend)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011B.xlsx",
+      "local_path": "data/raw/awe_vic_63020011B.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "2420d797c2e746090bc9707e6bdefc7bfd86df7fe5f0a19efabdf1a8148ac2d5",
+      "bytes": 49411,
+      "notes": ""
+    },
+    {
+      "key": "awe_wa",
+      "description": "ABS AWE Nov 2025 \u2014 Table 11 state WA (trend)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011E.xlsx",
+      "local_path": "data/raw/awe_wa_63020011E.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "e93b61deb54f9b01c7472cf768abd6c18bc4378cb95d34ae7d7619c8fce71449",
+      "bytes": 49458,
+      "notes": ""
+    },
+    {
+      "key": "cpi_capital_expclass",
+      "description": "ABS CPI Dec 2024 \u2014 Table 9 expenditure class by capital city",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/dec-quarter-2024/640107.xlsx",
+      "local_path": "data/raw/640107.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "5a2cde65bb4af04e6757d9f9ac966a037027f34ed91cdab29f9cc7372193cd03",
+      "bytes": 1618798,
+      "notes": ""
+    },
+    {
+      "key": "cpi_capital_groups",
+      "description": "ABS CPI Dec 2024 \u2014 Table 5 groups by capital city",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/dec-quarter-2024/640103.xlsx",
+      "local_path": "data/raw/640103.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "cf93b907af0b88b97febcd006921f09643fcf6a21a2b083b74491ecd57f2bc05",
+      "bytes": 169240,
+      "notes": ""
+    },
+    {
+      "key": "eeh_states",
+      "description": "ABS EEH May 2025 \u2014 data cube (includes Table 9 by state)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/employee-earnings-and-hours-australia/may-2025/63060DO001_202505.xlsx",
+      "local_path": "data/raw/63060DO001_202505.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "fd8775119b7778fe6c89e9a92196c7276a0a1bb322735f67d52baec43ec86ea2",
+      "bytes": 173440,
+      "notes": ""
+    },
+    {
+      "key": "homeaffairs_csol",
+      "description": "Department of Home Affairs \u2014 Core Skills Occupation List (PDF)",
+      "url": "https://immi.homeaffairs.gov.au/Documents/core-sol.pdf",
+      "local_path": "data/raw/homeaffairs_core_skills_occupation_list.pdf",
+      "access_date": "2026-10-14",
+      "sha256": "f3ec1d9e4ebb1eab468a9889b02311b1b93952d12571e55d3f05e9786c5f5978",
+      "bytes": 661774,
+      "notes": ""
+    },
+    {
+      "key": "jsa_ivi_anzsco2_states",
+      "description": "JSA Internet Vacancy Index \u2014 ANZSCO2 occupations by state (Aug 2025)",
+      "url": "https://www.jobsandskills.gov.au/sites/default/files/2025-09/internet_vacancies_anzsco2_occupations_states_and_territories_-_august_2025.xlsx",
+      "local_path": "data/raw/jsa_ivi_anzsco2_states_territories_aug2025.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "cfa86fc4144b0c273ef8f7a038e96275024f246e0af04247292b2eaa21a2de3e",
+      "bytes": 2931508,
+      "notes": ""
+    },
+    {
+      "key": "jsa_osl_2025",
+      "description": "JSA Occupation Shortage List 2025 (6-digit ANZSCO 2022)",
+      "url": "https://www.jobsandskills.gov.au/sites/default/files/2025-10/2025%20Occupation%20Shortage%20List%20-%206%20digit%20ANZSCO%20and%20OSCA.xlsx",
+      "local_path": "data/raw/jsa_occupation_shortage_list_2025.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "feb9bc5e4a60443f01226b0937c7b7db8786317ddf2bffef8a370ad5e1e24f23",
+      "bytes": 190031,
+      "notes": ""
+    },
+    {
+      "key": "legislation_lin_19051",
+      "description": "Federal Register of Legislation LIN 19/051 \u2014 MLTSSL/STSOL/ROL",
+      "url": "https://www.legislation.gov.au/F2019L00278/2024-12-14/2024-12-14/text/original/pdf",
+      "local_path": "data/raw/legislation_lin_19051_skilled_occupations.pdf",
+      "access_date": "2026-10-14",
+      "sha256": "aeba15b650f6f56672eea61f7bee0e5e0d41b8f5289151459205d78778805b76",
+      "bytes": 415742,
+      "notes": ""
+    },
+    {
+      "key": "nsw_rental_bond_lodgements",
+      "description": "NSW Fair Trading \u2014 rental bond lodgements Nov 2025",
+      "url": "https://www.nsw.gov.au/sites/default/files/noindex/2025-12/rentalbond_lodgements_november_2025.xlsx",
+      "local_path": "data/raw/nsw_rental_bond_lodgements_nov2025.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "5c330d3c61c3261183edc19d0e66f02f8102982ca4999889a147d573c9f3717f",
+      "bytes": 636734,
+      "notes": ""
+    },
+    {
+      "key": "slci_all_groups",
+      "description": "ABS SLCI Jun 2026 \u2014 all groups index",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/selected-living-cost-indexes-australia/jun-2026/646701.xlsx",
+      "local_path": "data/raw/646701.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "cb8190089914d2c8061467df169323ebe37a2a29aaf024df43f692fb61de85e6",
+      "bytes": 58028,
+      "notes": ""
+    }
+  ]
+}
