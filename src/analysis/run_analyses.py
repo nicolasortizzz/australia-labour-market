@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from src.analysis import affordability, conclusions, cost_of_living, earnings, occupations
+from src.analysis import affordability, conclusions, cost_of_living, earnings, occupations, savings_by_city
 
 
 def main() -> None:
@@ -10,6 +10,7 @@ def main() -> None:
     earnings.run()
     cost_of_living.run()
     affordability.run()
+    savings_by_city.run()
     findings = conclusions.run()
     print("Analysis complete. Key findings:")
     for k, v in findings.items():

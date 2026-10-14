@@ -15,6 +15,7 @@ def run() -> dict:
         "earnings_summary.json",
         "col_summary.json",
         "affordability_summary.json",
+        "savings_summary.json",
     ]
     merged: dict = {}
     for name in keys:

@@ -20,6 +20,14 @@ AWE_STATE_FILES = {
 # Employee Earnings and Hours — May 2025 (6306.0)
 EEH_RELEASE = "may-2025"
 EEH_STATES_FILE = "63060DO001_202505.xlsx"
+EEH_OCCUPATION_FILE = "63060DO011_202505.xlsx"
+
+# HES 2015-16 summary (non-rent living-cost anchor)
+HES_SUMMARY_FILE = "65300DO011_201516.xlsx"
+HES_SUMMARY_RELEASE = "2015-16"
+
+# ATO resident tax rates (HTML reference; brackets coded in src/io/ato_tax.py)
+ATO_TAX_RATES_URL = "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents"
 
 # CPI — December quarter 2024 (6401.0)
 CPI_RELEASE = "dec-quarter-2024"

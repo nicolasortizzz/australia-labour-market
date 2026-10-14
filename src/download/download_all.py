@@ -130,6 +130,38 @@ def main() -> None:
         "ABS EEH May 2025 — data cube (includes Table 9 by state)",
         cfg.EEH_STATES_FILE,
     )
+    eeh_occ_path = (
+        f"/statistics/labour/earnings-and-working-conditions/"
+        f"employee-earnings-and-hours-australia/{cfg.EEH_RELEASE}/"
+        f"{cfg.EEH_OCCUPATION_FILE}"
+    )
+    download_abs(
+        eeh_occ_path,
+        "eeh_occupation_4digit",
+        "ABS EEH May 2025 — occupation 4-digit weekly cash (DO011 Table 1)",
+        cfg.EEH_OCCUPATION_FILE,
+    )
+
+    hes_path = (
+        f"/statistics/economy/finance/household-expenditure-survey-australia-summary-results/"
+        f"{cfg.HES_SUMMARY_RELEASE}/{cfg.HES_SUMMARY_FILE}"
+    )
+    download_abs(
+        hes_path,
+        "hes_summary_201516",
+        "ABS HES 2015-16 — summary tables (living-cost anchor)",
+        cfg.HES_SUMMARY_FILE,
+    )
+
+    ato_dest = RAW / "ato_tax_rates_australian_residents.html"
+    download_file(cfg.ATO_TAX_RATES_URL, ato_dest, timeout=60, retries=2)
+    register_download(
+        "ato_tax_rates_2025_26",
+        "ATO — Australian resident tax rates (2025-26 brackets; Medicare levy noted on page)",
+        cfg.ATO_TAX_RATES_URL,
+        ato_dest,
+        notes="Brackets implemented in src/io/ato_tax.py for reproducible after-tax income.",
+    )
 
     cpi_base = (
         f"/statistics/economy/price-indexes-and-inflation/"
