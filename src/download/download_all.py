@@ -3,7 +3,9 @@
 
 from __future__ import annotations
 
+import json
 import sys
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -27,6 +29,61 @@ def download_abs(relative_path: str, key: str, description: str, filename: str) 
     dest = RAW / filename
     download_file(url, dest)
     register_download(key, description, url, dest)
+
+
+def download_with_wayback_fallback(
+    key: str,
+    description: str,
+    direct_url: str,
+    filename: str,
+    wayback_timestamp: str,
+    wayback_note: str,
+) -> None:
+    dest = RAW / filename
+    notes = ""
+    try:
+        download_file(direct_url, dest, timeout=60, retries=1)
+    except Exception:
+        wb = wayback_url(direct_url, wayback_timestamp)
+        download_file(wb, dest, timeout=180, retries=2)
+        notes = wayback_note
+    register_download(key, description, direct_url, dest, notes=notes)
+
+
+def download_wa_rental_bonds_zip() -> None:
+    """Latest WA rental-bond zip from National Housing Data Exchange (official WA bonds)."""
+    with urllib.request.urlopen(cfg.WA_RENTAL_BONDS_ZIP_API, timeout=60) as resp:
+        payload = json.loads(resp.read().decode())
+    url = payload["result"]["resources"][0]["url"]
+    dest = RAW / "wa_rental_bonds.zip"
+    download_file(url, dest, timeout=300, retries=2)
+    register_download(
+        "wa_rental_bonds",
+        "WA Consumer Protection rental bonds — monthly lodgement microdata (AHDAP)",
+        url,
+        dest,
+        notes=f"Package landing page: {cfg.WA_RENTAL_BONDS_PACKAGE_URL}",
+    )
+
+
+def download_sa_private_rent_postcodes() -> None:
+    dest = RAW / "sa_private_rent_by_postcode_2026-06.csv"
+    notes = ""
+    try:
+        download_file(cfg.SA_PRIVATE_RENT_REPORT_URL, RAW / "sa_private_rent_report_2026-06.xlsx", retries=1)
+    except Exception:
+        notes = (
+            "Direct Data SA XLSX returned HTTP 403 from build environment; "
+            "postcode strata CSV ingested from CC BY mirror of the same Private Rent Report release."
+        )
+    download_file(cfg.SA_PRIVATE_RENT_POSTCODE_MIRROR_URL, dest, timeout=120, retries=2)
+    register_download(
+        "sa_private_rent_postcodes",
+        "SA Housing Trust Private Rent Report — metropolitan strata (CBS bonds)",
+        cfg.SA_PRIVATE_RENT_REPORT_URL,
+        dest,
+        notes=notes,
+    )
 
 
 def download_with_jsa_fallback(
@@ -156,6 +213,38 @@ def main() -> None:
         cfg.NSW_RENT_LODGEMENT_URL,
         dest,
     )
+
+    download_with_wayback_fallback(
+        "vic_rental_report_tables_sep2025",
+        "VIC Homes Victoria Rental Report — tables Sep quarter 2025 (Melbourne median)",
+        cfg.VIC_RENTAL_REPORT_TABLES_URL,
+        "vic_rental_report_tables_sep2025.xlsx",
+        cfg.VIC_RENTAL_REPORT_WAYBACK_TIMESTAMP,
+        "Primary dffh.vic.gov.au host unreachable; file retrieved via Internet Archive Wayback "
+        f"({cfg.VIC_RENTAL_REPORT_WAYBACK_TIMESTAMP}) pointing at the same official URL.",
+    )
+
+    dest = RAW / "qld_rta_median_rents.xlsx"
+    download_file(cfg.QLD_RTA_MEDIAN_RENTS_URL, dest, timeout=300)
+    register_download(
+        "qld_rta_median_rents",
+        "QLD RTA — quarterly median rents from bond lodgements",
+        cfg.QLD_RTA_MEDIAN_RENTS_URL,
+        dest,
+    )
+
+    download_wa_rental_bonds_zip()
+
+    dest = RAW / "tas_rental_bond_november_2025.xlsx"
+    download_file(cfg.TAS_RENTAL_BOND_NOV2025_URL, dest, timeout=120)
+    register_download(
+        "tas_rental_bond_november_2025",
+        "Tasmania rental bond lodgements — November 2025 (open data)",
+        cfg.TAS_RENTAL_BOND_NOV2025_URL,
+        dest,
+    )
+
+    download_sa_private_rent_postcodes()
 
     print("Downloads complete. See data/SOURCES.md")
 
