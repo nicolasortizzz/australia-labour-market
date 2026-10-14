@@ -12,6 +12,16 @@
       "notes": ""
     },
     {
+      "key": "ato_tax_rates_2025_26",
+      "description": "ATO \u2014 Australian resident tax rates (2025-26 brackets; Medicare levy noted on page)",
+      "url": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+      "local_path": "data/raw/ato_tax_rates_australian_residents.html",
+      "access_date": "2026-10-14",
+      "sha256": "4d4f29c5e6a6df865a552a5e5ddbe499ffbb9933519a894e6aa3321097edf0d2",
+      "bytes": 795766,
+      "notes": "Brackets implemented in src/io/ato_tax.py for reproducible after-tax income."
+    },
+    {
       "key": "awe_act",
       "description": "ABS AWE Nov 2025 \u2014 Table 11 state ACT (trend)",
       "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/average-weekly-earnings-australia/nov-2025/63020011H.xlsx",
@@ -112,6 +122,16 @@
       "notes": ""
     },
     {
+      "key": "eeh_occupation_4digit",
+      "description": "ABS EEH May 2025 \u2014 occupation 4-digit weekly cash (DO011 Table 1)",
+      "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/employee-earnings-and-hours-australia/may-2025/63060DO011_202505.xlsx",
+      "local_path": "data/raw/63060DO011_202505.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "7f49925cd11fb8ef5b1400d0b3272cc579c8b6e565d0b07eae47ca17b35f5d19",
+      "bytes": 168219,
+      "notes": ""
+    },
+    {
       "key": "eeh_states",
       "description": "ABS EEH May 2025 \u2014 data cube (includes Table 9 by state)",
       "url": "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/employee-earnings-and-hours-australia/may-2025/63060DO001_202505.xlsx",
@@ -119,6 +139,16 @@
       "access_date": "2026-10-14",
       "sha256": "fd8775119b7778fe6c89e9a92196c7276a0a1bb322735f67d52baec43ec86ea2",
       "bytes": 173440,
+      "notes": ""
+    },
+    {
+      "key": "hes_summary_201516",
+      "description": "ABS HES 2015-16 \u2014 summary tables (living-cost anchor)",
+      "url": "https://www.abs.gov.au/statistics/economy/finance/household-expenditure-survey-australia-summary-results/2015-16/65300DO011_201516.xlsx",
+      "local_path": "data/raw/65300DO011_201516.xlsx",
+      "access_date": "2026-10-14",
+      "sha256": "00b9ae21166a6b342a41eb6aa4d3e3a57a3ce0d5bb3f9f298a00ed27f960c233",
+      "bytes": 245396,
       "notes": ""
     },
     {

@@ -1,0 +1,343 @@
+anzsco_4digit,occupation_group,eeh_weekly_cash_aud_national
+1111,1111 Chief executives and managing directors,2962.8
+1112,1112 General managers,3476.7
+1213,1213 Livestock farmers,2249.8
+1311,"1311 Advertising, public relations and sales managers",3033.6
+1321,1321 Corporate services managers,3263.0
+1322,1322 Finance managers,3155.3
+1323,1323 Human resource managers,2995.7
+1324,1324 Policy and planning managers,3302.3
+1325,1325 Research and development managers,3133.3
+1331,1331 Construction managers,2837.7
+1332,1332 Engineering managers,3938.8
+1333,"1333 Importers, exporters and wholesalers",1903.4
+1334,1334 Manufacturers,2124.4
+1335,1335 Production managers,2817.8
+1336,"1336 Supply, distribution and procurement managers",2915.3
+1341,1341 Child care centre managers,1650.3
+1342,1342 Health and welfare services managers,2720.9
+1343,1343 School principals,2939.8
+1344,1344 Other education managers,2822.8
+1351,1351 ICT managers,3573.4
+1391,1391 Commissioned officers (management),3872.8
+1399,1399 Other specialist managers,3105.7
+1411,1411 Cafe and restaurant managers,1492.1
+1412,1412 Caravan park and camping ground managers,1499.8
+1413,1413 Hotel and motel managers,1744.3
+1414,1414 Licensed club managers,1729.2
+1419,1419 Other accommodation and hospitality managers,2084.4
+1421,1421 Retail managers,1614.2
+1491,"1491 Amusement, fitness and sports centre managers",1490.5
+1492,1492 Call or contact centre and customer service managers,2483.5
+1493,1493 Conference and event organisers,1547.1
+1494,1494 Transport services managers,2358.4
+1499,"1499 Other hospitality, retail and service managers",2394.7
+2111,"2111 Actors, dancers and other entertainers",763.5
+2112,2112 Music professionals,1048.5
+2113,2113 Photographers,1734.7
+2114,2114 Visual arts and crafts professionals,1676.9
+2121,"2121 Artistic directors, and media producers and presenters",1999.2
+2122,"2122 Authors, and book and script editors",1415.4
+2123,"2123 Film, television, radio and stage directors",2017.1
+2124,2124 Journalists and other writers,1794.2
+2211,2211 Accountants,1829.3
+2212,"2212 Auditors, company secretaries and corporate treasurers",2258.5
+2221,2221 Financial brokers,1902.6
+2222,2222 Financial dealers,2668.1
+2223,2223 Financial investment advisers and managers,2402.6
+2231,2231 Human resource professionals,1895.6
+2233,2233 Training and development professionals,1991.5
+2241,2241 Mathematical science professionals,2186.0
+2242,"2242 Archivists, curators and records managers",1845.5
+2243,2243 Economists,2314.6
+2244,2244 Intelligence and policy analysts,2185.3
+2245,2245 Land economists and valuers,2562.2
+2246,2246 Librarians,1811.3
+2247,2247 Management and organisation analysts,2397.9
+2249,2249 Other information and organisation professionals,2217.6
+2251,2251 Advertising and marketing professionals,2002.7
+2252,2252 ICT sales professionals,2324.8
+2253,2253 Public relations professionals,1970.3
+2254,2254 Technical sales representatives,2616.2
+2311,2311 Air transport professionals,3023.9
+2312,2312 Marine transport professionals,2338.5
+2321,2321 Architects and landscape architects,2218.3
+2322,2322 Surveyors and spatial scientists,2273.8
+2323,"2323 Fashion, industrial and jewellery designers",1865.4
+2324,"2324 Graphic and web designers, and illustrators",1817.9
+2325,2325 Interior designers,1544.9
+2326,2326 Urban and regional planners,2217.4
+2331,2331 Chemical and materials engineers,2460.4
+2332,2332 Civil engineering professionals,2337.7
+2333,2333 Electrical engineers,2612.3
+2334,2334 Electronics engineers,2739.2
+2335,"2335 Industrial, mechanical and production engineers",2682.5
+2336,2336 Mining engineers,3461.6
+2339,2339 Other engineering professionals,2491.2
+2341,"2341 Agricultural, fisheries and forestry scientists",2219.2
+2342,"2342 Chemists, and food and wine scientists",2026.6
+2343,2343 Environmental scientists,1742.3
+2344,"2344 Geologists, geophysicists and hydrogeologists",2872.7
+2345,2345 Life scientists,1909.8
+2346,2346 Medical scientists,1847.4
+2347,2347 Veterinarians,1627.1
+2349,2349 Other natural and physical science professionals,1856.3
+2411,2411 Early childhood (pre-primary school) teachers,1346.1
+2412,2412 Primary school teachers,1758.2
+2413,2413 Middle school teachers / intermediate school teachers,1863.0
+2414,2414 Secondary school teachers,2025.4
+2415,2415 Special education teachers,2060.4
+2421,2421 University lecturers and tutors,1830.8
+2422,2422 Vocational education teachers / polytechnic teachers,1638.0
+2491,2491 Education advisers and reviewers,2033.4
+2492,2492 Private tutors and teachers,346.1
+2493,2493 Teachers of English to speakers of other languages,1503.2
+2511,2511 Nutrition professionals,1480.5
+2512,2512 Medical imaging professionals,2042.9
+2513,2513 Occupational and environmental health professionals,2123.2
+2514,2514 Optometrists and orthoptists,1881.1
+2515,2515 Pharmacists,1547.7
+2519,2519 Other health diagnostic and promotion professionals,1599.3
+2521,2521 Chiropractors and osteopaths,1087.9
+2523,2523 Dental practitioners,2471.8
+2524,2524 Occupational therapists,1829.6
+2525,2525 Physiotherapists,1581.4
+2526,2526 Podiatrists,1271.8
+2527,2527 Audiologists and speech pathologists / therapists,1517.7
+2531,2531 General practitioners and resident medical officers,2654.3
+2532,2532 Anaesthetists,5365.6
+2533,2533 Specialist physicians,3440.0
+2534,2534 Psychiatrists,3381.3
+2535,2535 Surgeons,4158.7
+2539,2539 Other medical practitioners,3867.8
+2541,2541 Midwives,1481.8
+2542,2542 Nurse educators and researchers,2032.3
+2543,2543 Nurse managers,2443.3
+2544,2544 Registered nurses,1718.3
+2611,2611 ICT business and systems analysts,2737.1
+2612,2612 Multimedia specialists and web developers,2228.8
+2613,2613 Software and applications programmers,2610.2
+2621,"2621 Database and systems administrators, and ICT security specialists",2408.4
+2631,2631 Computer network professionals,2398.2
+2632,2632 ICT support and test engineers,2305.3
+2633,2633 Telecommunications engineering professionals,2904.0
+2711,2711 Barristers,3062.9
+2712,2712 Judicial and other legal professionals,3039.7
+2713,2713 Solicitors,2298.9
+2721,2721 Counsellors,1407.1
+2722,2722 Ministers of religion,1210.0
+2723,2723 Psychologists,1532.7
+2724,2724 Social professionals,1356.7
+2725,2725 Social workers,1928.4
+2726,"2726 Welfare, recreation and community arts workers",1716.9
+3111,"3111 Agricultural, agritech and aquaculture technicians",1678.7
+3112,3112 Medical technicians,1275.8
+3113,3113 Primary products assurance and inspection officers,1633.1
+3114,3114 Science technicians,1587.8
+3121,"3121 Architectural, building and surveying technicians",2304.9
+3122,3122 Civil engineering draftspersons and technicians,1683.1
+3123,3123 Electrical engineering draftspersons and technicians,2695.8
+3124,3124 Electronic engineering draftspersons and technicians,1753.4
+3125,3125 Mechanical engineering draftspersons and technicians,2671.1
+3126,3126 Safety inspectors,1745.3
+3129,3129 Other building and engineering technicians,3008.1
+3131,3131 ICT support technicians,1737.0
+3132,3132 Telecommunications technical specialists,2303.8
+3211,3211 Automotive electricians,2513.3
+3212,3212 Motor mechanics,1561.5
+3222,3222 Sheetmetal workers,1648.2
+3223,3223 Structural steel and welding trades workers,1815.8
+3231,3231 Aircraft maintenance engineers,2039.7
+3232,3232 Metal fitters and machinists,2486.9
+3233,3233 Precision metal trades workers,1308.9
+3234,3234 Toolmakers and engineering patternmakers,840.8
+3241,3241 Panelbeaters,1797.4
+3242,3242 Vehicle body builders and trimmers,740.2
+3243,3243 Vehicle painters,1721.3
+3311,3311 Bricklayers and stonemasons,1688.4
+3312,3312 Carpenters and joiners,1672.1
+3321,3321 Floor finishers,1862.8
+3322,3322 Painters,1365.2
+3331,3331 Glaziers,1850.1
+3332,3332 Plasterers and renderers,1311.0
+3333,3333 Roof tilers,388.6
+3334,3334 Wall and floor tilers,1104.2
+3341,3341 Plumbers,1746.8
+3411,3411 Electricians,2129.2
+3421,3421 Airconditioning and refrigeration mechanics,2069.7
+3422,3422 Electrical distribution trades workers,3047.3
+3423,3423 Electronics trades workers,1822.2
+3424,3424 Telecommunications trades workers,2151.4
+3511,3511 Bakers and pastrycooks,1151.8
+3512,3512 Butchers and smallgoods makers,1397.7
+3513,3513 Chefs,1270.1
+3514,3514 Cooks,962.6
+3611,3611 Animal attendants and trainers,1016.3
+3613,3613 Veterinary nurses,969.3
+3621,3621 Florists,1193.7
+3623,3623 Sports turf managers and trades workers,1363.8
+3624,3624 Nurserypersons,1244.8
+3625,3625 Arboriculture workers,1444.0
+3626,3626 Gardeners (general),1009.4
+3627,3627 Landscape gardeners and irrigation technicians,1398.1
+3911,3911 Hairdressers,887.6
+3921,3921 Print finishers and screen printers,960.5
+3922,3922 Graphic pre-press trades workers,1762.0
+3923,3923 Printers,1395.9
+3932,3932 Clothing trades workers,595.7
+3933,3933 Upholsterers,1384.4
+3941,3941 Cabinet and furniture makers,1358.5
+3942,3942 Wood machinists and other wood trades workers,1186.1
+3991,3991 Boat builders and shipwrights,1896.1
+3992,"3992 Chemical, gas, petroleum and power generation plant operators",3192.9
+3993,"3993 Gallery, library and museum technicians",1082.0
+3995,3995 Performing arts technicians,1348.7
+3999,3999 Other miscellaneous technicians and trades workers,2148.4
+4111,4111 Ambulance officers and paramedics,2686.9
+4112,"4112 Dental hygienists, technicians and therapists",1461.1
+4113,4113 Diversional therapists,1163.4
+4114,4114 Enrolled and mothercraft nurses,1293.5
+4115,4115 Indigenous health workers,1529.8
+4116,4116 Massage therapists,788.7
+4117,4117 Welfare support workers,1538.0
+4211,4211 Child carers,890.2
+4221,4221 Education aides,909.4
+4231,4231 Aged and disabled carers,1027.4
+4232,4232 Dental assistants,875.6
+4233,4233 Nursing support and personal care workers,1117.7
+4234,4234 Special care workers,1150.0
+4311,4311 Bar attendants and baristas,840.6
+4312,4312 Cafe workers,691.6
+4313,4313 Gaming workers,1283.9
+4314,4314 Hotel service managers,1345.7
+4315,4315 Waiters,638.1
+4319,4319 Other hospitality workers,662.4
+4412,4412 Fire and emergency workers,2168.5
+4413,4413 Police,2471.2
+4421,4421 Prison officers,2135.5
+4422,4422 Security officers and guards,1492.8
+4511,4511 Beauty therapists,794.0
+4512,4512 Driving instructors,1817.2
+4514,"4514 Gallery, museum and tour guides",1011.4
+4516,4516 Tourism and travel advisers,1119.2
+4517,4517 Travel attendants,1452.6
+4518,4518 Other personal service workers,615.4
+4521,4521 Fitness instructors,417.8
+4522,4522 Outdoor adventure guides,996.7
+4523,"4523 Sports coaches, instructors and officials",456.8
+4524,4524 Sportspersons,1381.4
+5111,"5111 Contract, program and project administrators",2036.7
+5121,5121 Office managers,1510.7
+5122,5122 Practice managers,1516.2
+5211,5211 Personal assistants,1588.2
+5212,5212 Secretaries,1197.0
+5311,5311 General clerks,1170.6
+5321,5321 Keyboard operators,904.1
+5411,5411 Call or contact centre workers,1356.5
+5412,5412 Information officers,1296.7
+5421,5421 Receptionists,880.4
+5511,5511 Accounting clerks,1310.3
+5512,5512 Bookkeepers,818.8
+5513,5513 Payroll clerks,1479.9
+5521,5521 Bank workers,1450.5
+5522,5522 Credit and loans officers (Aus) / finance clerks (NZ),1794.2
+5523,"5523 Insurance, money market and statistical clerks",1522.0
+5611,5611 Betting clerks,308.6
+5612,5612 Couriers and postal deliverers,1367.6
+5613,5613 Filing and registry clerks,1396.6
+5615,5615 Survey interviewers,915.8
+5616,5616 Switchboard operators,1437.1
+5619,5619 Other clerical and office support workers,912.6
+5911,5911 Purchasing and supply logistics clerks,1553.4
+5912,5912 Transport and despatch clerks,1687.0
+5991,5991 Conveyancers and legal executives,1361.4
+5992,5992 Court and legal clerks,1254.2
+5993,5993 Debt collectors,1462.6
+5994,5994 Human resource clerks,1466.9
+5995,5995 Inspectors and regulatory officers,1781.2
+5996,"5996 Insurance investigators, loss adjusters and risk surveyors",1842.2
+5997,5997 Library assistants,909.0
+5999,5999 Other miscellaneous clerical and administrative workers,1295.3
+6112,6112 Insurance agents,1577.8
+6113,6113 Sales representatives,1681.6
+6121,6121 Real estate sales agents,1640.2
+6211,6211 Sales assistants (general),633.0
+6212,6212 ICT sales assistants,1202.4
+6213,6213 Motor vehicle and vehicle parts salespersons,1415.3
+6214,6214 Pharmacy sales assistants,893.8
+6215,6215 Retail supervisors,1169.1
+6216,6216 Service station attendants,604.6
+6219,6219 Other sales assistants and salespersons,1171.8
+6311,6311 Checkout operators and office cashiers,434.4
+6391,6391 Models and sales demonstrators,519.8
+6392,6392 Retail and wool buyers,1651.7
+6393,6393 Telemarketers,1566.7
+6394,6394 Ticket salespersons,896.9
+6395,6395 Visual merchandisers,1022.4
+6399,6399 Other sales support workers,604.6
+7111,"7111 Clay, concrete, glass and stone processing machine operators",1805.9
+7112,7112 Industrial spraypainters,1702.2
+7113,7113 Paper and wood processing machine operators,1537.8
+7114,7114 Photographic developers and printers,984.4
+7115,7115 Plastics and rubber production machine operators,1747.5
+7116,7116 Sewing machinists,960.7
+7117,7117 Textile and footwear production machine operators,1014.2
+7119,7119 Other machine operators,1491.6
+7121,"7121 Crane, hoist and lift operators",3434.3
+7122,"7122 Drillers, miners and shot firers",2935.5
+7123,7123 Engineering production workers,1814.6
+7129,7129 Other stationary plant operators,2078.9
+7211,"7211 Agricultural, forestry and horticultural plant operators",1519.7
+7212,7212 Earthmoving plant operators,2105.5
+7213,7213 Forklift drivers,1455.9
+7219,7219 Other mobile plant operators,1836.3
+7311,7311 Automobile drivers,465.6
+7312,7312 Bus and coach drivers,1359.1
+7313,7313 Train and tram drivers,3019.5
+7321,7321 Delivery drivers,1067.9
+7331,7331 Truck drivers,1899.1
+7411,7411 Storepersons,1265.8
+8111,8111 Car detailers,983.3
+8112,8112 Commercial cleaners,776.0
+8113,8113 Domestic cleaners,746.5
+8114,8114 Housekeepers,650.2
+8115,8115 Laundry workers,942.2
+8116,8116 Other cleaners,1098.0
+8211,8211 Building and plumbing labourers,1670.2
+8212,8212 Concreters,1962.0
+8213,8213 Fencers,1588.8
+8214,8214 Insulation and home improvement installers,1332.5
+8215,8215 Paving and surfacing labourers,1846.1
+8216,8216 Railway track workers,2670.2
+8217,8217 Structural steel construction workers,2669.9
+8219,8219 Other construction and mining labourers,1882.1
+8311,8311 Food and drink factory workers,1559.6
+8312,"8312 Meat boners and slicers, and slaughterers",1567.1
+8313,"8313 Meat, poultry and seafood process workers",1272.5
+8321,8321 Packers,977.5
+8322,8322 Product assemblers,1167.0
+8391,8391 Metal engineering process workers,1162.6
+8392,8392 Plastics and rubber factory workers,1633.4
+8393,8393 Product quality controllers,1294.2
+8394,8394 Timber and wood process workers,1602.9
+8399,8399 Other factory process workers,1189.9
+8422,8422 Crop farm workers,1143.3
+8423,8423 Livestock farm workers,719.2
+8424,8424 Mixed production farm workers,1629.7
+8432,8432 Garden labourers,1297.1
+8433,8433 Horticultural nursery assistants,820.6
+8434,8434 Pest control technicians,1185.5
+8439,8439 Other forestry and garden workers,1108.9
+8511,8511 Fast food cooks,423.5
+8512,8512 Food trades assistants,1239.9
+8513,8513 Kitchenhands,535.8
+8911,8911 Freight and furniture handlers,1500.0
+8912,8912 Shelf fillers,628.7
+8991,8991 Caretakers,1262.8
+8992,8992 Deck and fishing hands,1675.7
+8993,8993 Handypersons,1274.7
+8994,8994 Motor vehicle parts and accessories fitters,1085.8
+8995,8995 Printing assistants and table workers,796.9
+8996,8996 Recycling and rubbish collectors,1367.5
+8997,8997 Vending machine attendants,741.3
+8999,8999 Other miscellaneous labourers,1257.8

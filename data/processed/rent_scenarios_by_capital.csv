@@ -1,0 +1,25 @@
+capital,rent_scenario,weekly_rent_aud,rent_observed_base,rent_scenario_note,rent_period
+Sydney,alone_all_median,700.0,True,"Median weekly rent, all NSW lodgements (state proxy for Sydney capital)",Nov 2025 (monthly bond lodgements)
+Sydney,alone_1bed,595.0,True,estimate_ratio_0.85_all_median,Nov 2025 (monthly bond lodgements)
+Sydney,share_flat_half_2bed,367.5,True,assumption_50pct_of_estimated_2bed,Nov 2025 (monthly bond lodgements)
+Melbourne,alone_all_median,580.0,True,"Published metropolitan Melbourne median (Table 1, all properties)",Sep quarter 2025
+Melbourne,alone_1bed,300.0,True,observed,Sep quarter 2025
+Melbourne,share_flat_half_2bed,195.0,True,assumption_50pct_of_2bed_median,Sep quarter 2025
+Brisbane,alone_all_median,620.0,True,"Brisbane (C) LGA, all dwellings, published quarterly median",Sep quarter 2025
+Brisbane,alone_1bed,527.0,True,estimate_ratio_0.85_all_median,Sep quarter 2025
+Brisbane,share_flat_half_2bed,325.5,True,assumption_50pct_of_estimated_2bed,Sep quarter 2025
+Adelaide,alone_all_median,580.0,True,Bond-weighted median across metropolitan Adelaide postcode/dwelling strata,Apr–Jun 2026 (quarterly report)
+Adelaide,alone_1bed,500.0,True,observed,Apr–Jun 2026 (quarterly report)
+Adelaide,share_flat_half_2bed,265.0,True,assumption_50pct_of_2bed_median,Apr–Jun 2026 (quarterly report)
+Perth,alone_all_median,700.0,True,"Median weekly rent, Greater Perth postcodes 6000–6199",2025-11 (monthly lodgements)
+Perth,alone_1bed,595.0,True,estimate_ratio_0.85_all_median,2025-11 (monthly lodgements)
+Perth,share_flat_half_2bed,367.5,True,assumption_50pct_of_estimated_2bed,2025-11 (monthly lodgements)
+Hobart,alone_all_median,530.0,True,"Median weekly rent, Greater Hobart postcodes (bond lodgements)",Nov 2025 (monthly bond lodgements)
+Hobart,alone_1bed,450.5,True,estimate_ratio_0.85_all_median,Nov 2025 (monthly bond lodgements)
+Hobart,share_flat_half_2bed,278.25,True,assumption_50pct_of_estimated_2bed,Nov 2025 (monthly bond lodgements)
+Darwin,alone_all_median,637.2058823529412,False,NSW bond median × (city CPI rent / Sydney CPI rent) [fallback],Scaled to NSW bond anchor period
+Darwin,alone_1bed,541.625,False,estimate_ratio_0.85_all_median,Scaled to NSW bond anchor period
+Darwin,share_flat_half_2bed,334.53308823529414,False,assumption_50pct_of_estimated_2bed,Scaled to NSW bond anchor period
+Canberra,alone_all_median,765.3676470588234,False,NSW bond median × (city CPI rent / Sydney CPI rent) [fallback],Scaled to NSW bond anchor period
+Canberra,alone_1bed,650.5624999999999,False,estimate_ratio_0.85_all_median,Scaled to NSW bond anchor period
+Canberra,share_flat_half_2bed,401.8180147058823,False,assumption_50pct_of_estimated_2bed,Scaled to NSW bond anchor period

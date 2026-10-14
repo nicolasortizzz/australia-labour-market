@@ -34,6 +34,9 @@ Outputs: `outputs/figures/*.png`, `outputs/tables/*.csv`, `data/processed/*.csv`
 | WA Consumer Protection (AHDAP) | Monthly rental bond lodgements | **Observed** Greater Perth median |
 | SA Housing Trust / CBS | Private Rent Report postcode strata | **Observed** metropolitan Adelaide median |
 | TAS Dept of Justice | Rental bond open data, Nov 2025 | **Observed** Greater Hobart median |
+| ABS 6306.0 | EEH May 2025, DO011 Table 1 | **National** average weekly cash earnings by 4-digit ANZSCO occupation |
+| ABS 6530.0 | HES 2015-16 summary | Lone-person **non-housing** spending anchor (CPI-scaled living costs) |
+| ATO | [Resident tax rates 2025–26](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents) | After-tax income (+ 2% Medicare levy in code; super excluded) |
 
 Full URLs, access dates, and SHA-256 hashes: [`data/manifest.json`](data/manifest.json) and [`data/SOURCES.md`](data/SOURCES.md).
 
@@ -168,13 +171,55 @@ Higher values imply more weekly pay per unit of city-wide consumer prices.
 
 ---
 
-## 5. Conclusions
+## 5. Where can you save the most? (economics / finance / data professionals)
+
+Occupation-level **disposable savings** by state capital:
+
+\[
+\text{disposable savings/week} = \text{after-tax weekly pay} - \text{rent} - \text{other living costs}
+\]
+
+### Method (all assumptions flagged in CSV)
+
+| Step | Source | Notes |
+| --- | --- | --- |
+| Gross weekly pay | ABS **EEH May 2025** Table 1 (4-digit ANZSCO) | National occupation average; **× state EEH Table 9 / Australia** → state estimate (`earnings_is_state_estimate`) |
+| After-tax pay | **ATO 2025–26** resident brackets + **2% Medicare** | Implemented in `src/io/ato_tax.py`; HTML archived in `data/raw/` |
+| Rent | Bond / rental-report medians + scenarios | `alone_all_median`, `alone_1bed` (where published), `share_flat_half_2bed` (= **50%** of 2-bed median, flagged) |
+| Other living costs | **HES 2015-16** lone-person non-housing anchor (~$572/wk in 2015-16 dollars), inflated and **CPI-scaled by capital** | Low / central / high = **±15%** (`living_cost_sensitivity`) |
+
+Profiles (ANZSCO 2022): Actuary 224111, Economist 224311, Financial Investment Adviser/Manager 222311–222312, **Financial dealer 2222** (proxy where no “financial analyst” line in EEH), Accountants 221111–221113, Data Analyst 224114, Data Scientist 224115. Demand/visa context: [`outputs/tables/professional_occupations_visa_demand.csv`](outputs/tables/professional_occupations_visa_demand.csv) (OSL 2025, CSOL, LIN 19/051 lists, IVI sub-major groups Aug 2025).
+
+### Rankings (central living costs, alone, all-dwellings median rent)
+
+**Pattern:** For every profile in this set, **Darwin** ranks #1 and **Adelaide** ranks #8 on disposable savings — mainly **state pay relativity** (EEH scaling) vs rent, with **Canberra/NT rents imputed** from CPI (flagged).
+
+| Occupation | Best city | Disposable $/week | Worst city | Disposable $/week |
+| --- | --- | ---: | --- | ---: |
+| Accountant (General) 221111 | Darwin | **234** | Adelaide | **−8** (estimate) |
+| Economist 224311 | Darwin | **603** | Hobart | 283 |
+| Financial Investment Adviser 222311 | Darwin | **663** | Hobart | 334 |
+| Data Analyst 224114 | Darwin | **529** | Hobart | 226 |
+| Actuary 224111 | Darwin | **505** | Hobart | 207 |
+
+Full grid (all scenarios/sensitivities): [`outputs/tables/savings_by_city_detail.csv`](outputs/tables/savings_by_city_detail.csv). Rankings table: [`outputs/tables/savings_rankings_alone_median_central.csv`](outputs/tables/savings_rankings_alone_median_central.csv).
+
+![Savings by city — accountant](outputs/figures/savings_by_city_accountant_alone_median.png)
+
+![Best capital per occupation](outputs/figures/savings_best_capital_by_occupation.png)
+
+**Caveats:** No 6-digit EEH earnings by state (scaling is an estimate). HES living-cost anchor is **2015-16** (CPI-updated, not SLCI-by-city). Negative savings mean the central scenario spends more than after-tax pay after rent — treat as illustrative. **Visa pathways** are summarised from downloaded lists only; confirm current rules with [Home Affairs](https://immi.homeaffairs.gov.au/).
+
+---
+
+## 6. Conclusions
 
 1. **Migration-aligned shortages** are widespread: **227** occupations are simultaneously in national shortage and on the **CSOL**; legislative lists add overlapping pathways (MLTSSL/STSOL/ROL).  
 2. **Nominal pay** is highest in **ACT/WA**, then NSW; Tasmania is lowest on AWE but still saw strong **YoY growth** (~25%).  
 3. **Price levels** (CPI) vary modestly across capitals compared with **earnings** spreads; **Canberra** combines high AWE with a mid-range CPI, yielding the strongest **real earnings index** in this framework.  
 4. With **observed bond/report medians** for six capitals, **rent burden** is highest for **Canberra** and **Sydney** (~34%) on this crude measure; **Melbourne** is lower (~29%) at the Sep-2025 published median ($580/week). Hobart falls to **~29%** once Greater Hobart bond data ($530/week) replace CPI scaling.  
-5. **IVI** shows very large vacancy counts in clerical/call-centre and health/care groups; migrant planning should still prioritise **visa-list + shortage** alignment at 6-digit ANZSCO.
+5. **IVI** shows very large vacancy counts in clerical/call-centre and health/care groups; migrant planning should still prioritise **visa-list + shortage** alignment at 6-digit ANZSCO.  
+6. **Occupation-level savings** (EEH + ATO + observed rents): under the central scenario, **Darwin** leads disposable savings for finance/data/economics profiles modelled here; **Adelaide** is weakest (accountants can show **negative** central savings). See §5.
 
 ### Limitations
 
@@ -182,13 +227,13 @@ Higher values imply more weekly pay per unit of city-wide consumer prices.
 - Rent periods **differ by source** (monthly bonds vs quarterly reports); earnings and CPI are not fully aligned either.  
 - **ACT/NT** medians remain CPI-scaled fallbacks; ACT Revenue does not publish open bond rent microdata here.  
 - PDF parsing of visa lists may miss formatting edge cases; codes are validated against CSOL overlap counts.  
-- No tax, household composition, or transport costs—indexes are **illustrative**, not welfare measures.
+- No tax, household composition, or transport costs—indexes are **illustrative**, not welfare measures (the §5 savings module adds tax and living costs but retains other limitations above).
 
 ---
 
 ## Resumen en español
 
-Este repositorio analiza el mercado laboral australiano con datos oficiales descargables. **273** ocupaciones presentan escasez nacional; **227** de ellas figuran también en la lista CSOL de visados calificados. Los salarios semanales más altos (tiempo ordinario, adultos a tiempo completo, AWE nov-2025) están en **ACT (Canberra: A$2.249)** y **WA (Perth: A$2.189)**; los más bajos en **Tasmania (A$1.821)**. El índice de **ingreso real** favorece a **Canberra**. Las **medianas de alquiler observadas** (fianzas/informes oficiales) cubren **seis capitales** — p. ej. Melbourne **A$580** (sep-2025), Brisbane **A$620**, Perth **A$700** (nov-2025), Hobart **A$530**; **Canberra y Darwin** siguen con estimación por IPC. La **carga de alquiler** más alta en la definición base es **Canberra (~34 % del AWE)**; Hobart baja a **~29 %** con datos de fianzas. Vacantes IVI (ago-2025) destacan en atención al cliente y salud. Reproducir: `make all`. Fuentes y hashes en `data/SOURCES.md`.
+Este repositorio analiza el mercado laboral australiano con datos oficiales descargables. **273** ocupaciones presentan escasez nacional; **227** en CSOL. AWE nov-2025: máximo **ACT (A$2.249)**, mínimo **Tasmania (A$1.821)**. **Nuevo (§5):** ahorro disponible semanal tras impuestos (ATO 2025-26 + Medicare 2 %), alquiler (medianas observadas o estimadas) y otros gastos (ancla HES 2015-16 escalada por IPC) para perfiles economía/finanzas/datos (p. ej. economista **224311**, analista de datos **224114**, contador **221111**). Con coste de vida central y alquiler mediano viviendo solo, **Darwin** encabeza el ranking para todos estos perfiles (p. ej. economista **~A$603/semana**); **Adelaide** queda última (contador **~−A$8/semana**, escenario central). Ingresos por ocupación: EEH may-2025 nacional escalado por estado (**estimación**). Confirmar reglas de visado en Home Affairs. Reproducir: `make all`. Fuentes en `data/SOURCES.md`.
 
 ---
 

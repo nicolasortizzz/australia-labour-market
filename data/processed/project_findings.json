@@ -23,5 +23,15 @@
   "best_real_earnings_index": 1638.0189366351,
   "highest_rent_burden_capital": "Canberra",
   "highest_rent_burden_pct": 34.0314649648,
-  "nsw_anchor_median_rent_aud": 700.0
+  "nsw_anchor_median_rent_aud": 700.0,
+  "best_overall_weekly_aud": 844.1564280395,
+  "best_overall_occupation": "Financial dealer (proxy for financial analyst roles)",
+  "best_overall_capital": "Darwin",
+  "best_overall_anzsco": "2222",
+  "worst_overall_weekly_aud": -8.1972075186,
+  "worst_overall_capital": "Adelaide",
+  "worst_overall_occupation": "Accountant (General)",
+  "tax_year": "2025-26",
+  "tax_source": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+  "earnings_state_scaling": "EEH May 2025 occupation national \u00d7 state EEH relativity (estimate)"
 }
