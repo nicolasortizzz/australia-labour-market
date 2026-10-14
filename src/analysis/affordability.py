@@ -24,6 +24,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
+from matplotlib.ticker import FuncFormatter
+
+from src.fx import add_usd_columns, aud_usd_rate, matplotlib_aud_usd_formatter
 from src.io.cpi import load_cpi_all_groups_by_capital, load_cpi_rents_by_capital
 from src.io.earnings import load_awe_ft_adult_ordinary_by_state, load_eeh_avg_weekly_total_cash_by_state
 from src.io.rents_merge import merge_observed_and_imputed
@@ -54,6 +57,7 @@ def run() -> dict:
     )
 
     observed = load_all_observed_medians(RAW)
+    observed = add_usd_columns(observed, ["median_weekly_rent_aud"])
     observed.to_csv(PROC / "median_weekly_rents_observed.csv", index=False)
     observed.to_csv(TAB / "median_weekly_rents_by_capital.csv", index=False)
 
@@ -80,6 +84,9 @@ def run() -> dict:
     )
     base["residual_weekly_aud"] = base["awe_weekly_aud"] - base["median_weekly_rent_aud"]
     base = base.sort_values("real_earnings_index", ascending=False)
+    base = add_usd_columns(
+        base, ["awe_weekly_aud", "median_weekly_rent_aud", "residual_weekly_aud"]
+    )
     base.to_csv(PROC / "affordability_base.csv", index=False)
     base.to_csv(TAB / "affordability_index.csv", index=False)
 
@@ -132,7 +139,9 @@ def run() -> dict:
             fontsize=9,
         )
     ax.set_xlabel("CPI all groups index (capital)")
-    ax.set_ylabel("AWE weekly ($, FT adult ordinary time)")
+    fx_rate = aud_usd_rate()
+    ax.yaxis.set_major_formatter(FuncFormatter(matplotlib_aud_usd_formatter(fx_rate, decimals=0)))
+    ax.set_ylabel("AWE weekly (AUD, USD in parentheses); FT adult ordinary time")
     ax.set_title("Affordability map — colour = rent burden (% of AWE); ● observed rent, ○ imputed")
     fig.colorbar(ax.collections[0], ax=ax, label="Rent burden %")
     fig.tight_layout()

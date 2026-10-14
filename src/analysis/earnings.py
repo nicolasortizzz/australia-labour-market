@@ -8,6 +8,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
+from matplotlib.ticker import FuncFormatter
+
+from src.fx import add_usd_columns, aud_usd_rate, matplotlib_aud_usd_formatter
 from src.io.earnings import load_awe_ft_adult_ordinary_by_state, load_eeh_avg_weekly_total_cash_by_state
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -26,6 +29,7 @@ def run() -> dict:
     awe = load_awe_ft_adult_ordinary_by_state(RAW)
     eeh = load_eeh_avg_weekly_total_cash_by_state(RAW)
     merged = awe.merge(eeh, on=["state", "capital"], how="left")
+    merged = add_usd_columns(merged, ["awe_weekly_aud", "eeh_weekly_cash_aud"])
     merged.to_csv(PROC / "earnings_by_state.csv", index=False)
     merged.to_csv(TAB / "earnings_by_state.csv", index=False)
 
@@ -39,7 +43,11 @@ def run() -> dict:
         color="#2e7d32",
         ax=ax,
     )
-    ax.set_xlabel("Average weekly earnings ($) — full-time adults, ordinary time (AWE Nov 2025)")
+    fx_rate = aud_usd_rate()
+    ax.xaxis.set_major_formatter(FuncFormatter(matplotlib_aud_usd_formatter(fx_rate)))
+    ax.set_xlabel(
+        "Average weekly earnings (AUD, USD in parentheses) — FT adults, ordinary time (AWE Nov 2025)"
+    )
     ax.set_ylabel("State / territory")
     ax.set_title("AWE by state (persons, full-time adult ordinary time)")
     fig.tight_layout()

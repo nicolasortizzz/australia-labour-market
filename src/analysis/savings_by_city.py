@@ -27,14 +27,79 @@ from src.io.eeh_occupations import load_eeh_weekly_cash_by_occupation_4digit, na
 from src.io.jsa_ivi import load_ivi_group_by_state
 from src.io.jsa_osl import load_osl_2025
 from src.io.living_costs import load_non_rent_living_costs_by_capital
+from src.fx import add_usd_columns, aud_usd_metadata, aud_usd_rate, matplotlib_aud_usd_formatter
 from src.io.rent_scenarios import build_rent_scenarios
 from src.io.skilled_lists import load_csol_codes, load_lin_19051_lists
+from matplotlib.ticker import FuncFormatter
 
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw"
 PROC = ROOT / "data" / "processed"
 FIG = ROOT / "outputs" / "figures"
 TAB = ROOT / "outputs" / "tables"
+
+# City ranking table (§5): five headline occupations, central living + alone median rent
+CITY_RANKING_OCCUPATIONS: tuple[tuple[str, str, str], ...] = (
+    ("224311", "Economist", "economist_disposable_weekly_aud"),
+    ("224114", "Data Analyst", "data_analyst_disposable_weekly_aud"),
+    ("222311", "Financial Investment Adviser", "financial_investment_adviser_disposable_weekly_aud"),
+    ("224111", "Actuary", "actuary_disposable_weekly_aud"),
+    ("221111", "Accountant (General)", "accountant_disposable_weekly_aud"),
+)
+
+
+def _build_city_ranking_table(central: pd.DataFrame, rents: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
+    """Pivot capitals × occupations; order by mean savings across the five profiles."""
+    occ_codes = [c for c, _, _ in CITY_RANKING_OCCUPATIONS]
+    sub = central[central["anzsco"].astype(str).isin(occ_codes)].copy()
+    rent_flags = rents.loc[rents["rent_scenario"] == "alone_all_median", ["capital", "rent_observed_base"]]
+    sub = sub.merge(rent_flags, on="capital", how="left")
+
+    pivot = sub.pivot_table(
+        index="capital",
+        columns="title",
+        values="disposable_savings_weekly_aud",
+        aggfunc="first",
+    )
+    rename = {title: slug for _, title, slug in CITY_RANKING_OCCUPATIONS if title in pivot.columns}
+    pivot = pivot.rename(columns=rename)
+    slug_order = [slug for _, _, slug in CITY_RANKING_OCCUPATIONS if slug in pivot.columns]
+    pivot = pivot[slug_order]
+    pivot["mean_savings_weekly_aud"] = pivot.mean(axis=1)
+    pivot = pivot.sort_values("mean_savings_weekly_aud", ascending=False).reset_index()
+    pivot["rank_by_mean_savings"] = range(1, len(pivot) + 1)
+
+    obs = rent_flags.set_index("capital")["rent_observed_base"]
+    pivot["rent_median_observed"] = pivot["capital"].map(obs).fillna(False).astype(bool)
+    pivot["rent_median_note"] = pivot.apply(
+        lambda r: (
+            "Observed bond / rental-report median"
+            if r["rent_median_observed"]
+            else "Estimated — CPI-imputed from NSW bond anchor (Darwin/Canberra)"
+        ),
+        axis=1,
+    )
+
+    aud_cols = ["mean_savings_weekly_aud"] + slug_order
+    pivot = add_usd_columns(pivot, aud_cols)
+    usd_cols = [c.replace("_aud", "_usd") for c in aud_cols]
+    pivot = pivot[
+        ["rank_by_mean_savings", "capital", "rent_median_observed", "rent_median_note"]
+        + aud_cols
+        + usd_cols
+    ]
+
+    observed_only = pivot[pivot["rent_median_observed"]].sort_values(
+        "mean_savings_weekly_aud", ascending=False
+    )
+    leader_observed = observed_only.iloc[0]["capital"] if len(observed_only) else None
+    meta = {
+        "leader_among_observed_rent_capitals": leader_observed,
+        "leader_observed_mean_savings_weekly_aud": float(observed_only.iloc[0]["mean_savings_weekly_aud"])
+        if len(observed_only)
+        else None,
+    }
+    return pivot, meta
 
 
 def _visa_pathway_notes(on_csol: bool, on_mltssl: bool, on_stsol: bool, on_rol: bool) -> str:
@@ -174,6 +239,17 @@ def run() -> dict:
                     )
 
     detail = pd.DataFrame(detail_rows)
+    detail = add_usd_columns(
+        detail,
+        [
+            "weekly_gross_aud",
+            "weekly_net_after_tax_aud",
+            "weekly_rent_aud",
+            "weekly_other_living_aud",
+            "disposable_savings_weekly_aud",
+            "disposable_savings_annual_aud",
+        ],
+    )
     detail.to_csv(PROC / "savings_by_city_detail.csv", index=False)
     detail.to_csv(TAB / "savings_by_city_detail.csv", index=False)
 
@@ -197,7 +273,21 @@ def run() -> dict:
             "rank_within_occupation",
         ]
     ]
+    rank_tbl = add_usd_columns(
+        rank_tbl,
+        [
+            "weekly_gross_aud",
+            "weekly_net_after_tax_aud",
+            "weekly_rent_aud",
+            "weekly_other_living_aud",
+            "disposable_savings_weekly_aud",
+        ],
+    )
     rank_tbl.to_csv(TAB / "savings_rankings_alone_median_central.csv", index=False)
+
+    city_rank, city_rank_meta = _build_city_ranking_table(central, rents)
+    city_rank.to_csv(TAB / "city_savings_ranking_by_occupation.csv", index=False)
+    city_rank.to_csv(PROC / "city_savings_ranking_by_occupation.csv", index=False)
 
     # Chart: top occupation (Accountant general) — alone all median, central living costs
     chart_occ = "221111"
@@ -205,7 +295,11 @@ def run() -> dict:
     fig, ax = plt.subplots(figsize=(10, 6))
     ax.barh(plot_df["capital"], plot_df["disposable_savings_weekly_aud"], color="#2e7d32")
     ax.axvline(0, color="k", linewidth=0.8)
-    ax.set_xlabel("Disposable savings ($/week, after tax, rent, other living costs)")
+    fx_rate = aud_usd_rate()
+    ax.xaxis.set_major_formatter(FuncFormatter(matplotlib_aud_usd_formatter(fx_rate)))
+    ax.set_xlabel(
+        "Disposable savings per week (AUD, USD in parentheses) — after tax, rent, other living"
+    )
     ax.set_title(
         f"Where to save most — {plot_df['title'].iloc[0]} (ANZSCO {chart_occ})\n"
         "Rent: all-dwellings median; living costs: central HES/CPI scenario"
@@ -227,7 +321,8 @@ def run() -> dict:
             va="center",
             fontsize=9,
         )
-    ax.set_xlabel("Best-capital disposable savings ($/week)")
+    ax.xaxis.set_major_formatter(FuncFormatter(matplotlib_aud_usd_formatter(fx_rate)))
+    ax.set_xlabel("Best-capital disposable savings per week (AUD, USD in parentheses)")
     ax.set_title("Best capital city per occupation (alone, median rent, central living costs)")
     fig.tight_layout()
     fig.savefig(FIG / "savings_best_capital_by_occupation.png", dpi=150)
@@ -236,6 +331,7 @@ def run() -> dict:
     # Summary JSON
     overall_best = central.loc[central["disposable_savings_weekly_aud"].idxmax()]
     overall_worst = central.loc[central["disposable_savings_weekly_aud"].idxmin()]
+    fx_meta = aud_usd_metadata()
     summary = {
         "best_overall_weekly_aud": float(overall_best["disposable_savings_weekly_aud"]),
         "best_overall_occupation": overall_best["title"],
@@ -247,6 +343,9 @@ def run() -> dict:
         "tax_year": INCOME_YEAR,
         "tax_source": ATO_TAX_RATES_URL,
         "earnings_state_scaling": "EEH May 2025 occupation national × state EEH relativity (estimate)",
+        "city_ranking_leader_observed_rent": city_rank_meta["leader_among_observed_rent_capitals"],
+        "aud_usd_rate": float(fx_meta["rate"]),
+        "aud_usd_rate_date": fx_meta["rate_date"],
     }
     pd.Series(summary).to_json(PROC / "savings_summary.json", indent=2)
     return summary
