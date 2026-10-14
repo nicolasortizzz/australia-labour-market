@@ -28,15 +28,23 @@ Outputs: `outputs/figures/*.png`, `outputs/tables/*.csv`, `data/processed/*.csv`
 | ABS 6401.0 | CPI, Dec quarter 2024, Tables 5 & 9 | All-groups and housing/rent indexes by capital |
 | ABS 6467.0 | Selected Living Cost Indexes, Jun 2026 | Downloaded and archived; **not** used in main indexes (national household groups only in published cube) |
 | ABS 6354.0 | Job Vacancies by state, Aug 2026 | Downloaded as official IVI supplement; not merged in current charts |
-| NSW Government / Fair Trading | Rental bond lodgements, Nov 2025 | **Observed** median weekly rent (Sydney anchor) |
+| NSW Government / Fair Trading | Rental bond lodgements, Nov 2025 | **Observed** median weekly rent (NSW bonds; Sydney proxy) |
+| VIC Homes Victoria / DFFH | Rental Report tables, Sep quarter 2025 | **Observed** metropolitan Melbourne median |
+| QLD RTA | Quarterly median rents (bond lodgements) | **Observed** Brisbane (C) all-dwellings median |
+| WA Consumer Protection (AHDAP) | Monthly rental bond lodgements | **Observed** Greater Perth median |
+| SA Housing Trust / CBS | Private Rent Report postcode strata | **Observed** metropolitan Adelaide median |
+| TAS Dept of Justice | Rental bond open data, Nov 2025 | **Observed** Greater Hobart median |
 
 Full URLs, access dates, and SHA-256 hashes: [`data/manifest.json`](data/manifest.json) and [`data/SOURCES.md`](data/SOURCES.md).
+
+Observed medians by capital: [`outputs/tables/median_weekly_rents_by_capital.csv`](outputs/tables/median_weekly_rents_by_capital.csv) (`rent_observed` flag in [`outputs/tables/affordability_index.csv`](outputs/tables/affordability_index.csv)).
 
 ### Unavailable or partial
 
 - **JSA direct host:** In some environments `jobsandskills.gov.au` file URLs fail; the downloader retries via **Internet Archive Wayback** pointing at the same official file URL (noted in the manifest when used).
 - **CPI Rents by capital:** ABS Table 9 publishes **rent** indexes only for **Sydney and Melbourne** in the downloaded cube. Other capitals use **CPI Housing** as a rent proxy (`rent_index_source` column in outputs).
-- **Median rent outside NSW:** Only NSW publishes machine-readable bond lodgements used here; other cities’ rents are **imputed** from the NSW median and CPI rent/housing ratios (see methodology).
+- **VIC / SA hosts:** `dffh.vic.gov.au` and `data.sa.gov.au` may block automated downloads; the pipeline uses **Wayback** (VIC) or a **CC BY mirror** of the same SA Private Rent Report release (noted in the manifest).
+- **ACT and NT medians:** No open ACT Revenue bond rent series and no NT bond microdata in this pipeline; **Canberra** and **Darwin** use CPI-scaled imputation (clearly flagged). NT Economy / REINT publish separate house and unit medians only.
 
 ---
 
@@ -102,7 +110,18 @@ IVI measures **advertised vacancies** (not hires) and uses a different ANZSCO ag
 | Melbourne | 130.6 | CPI Rents |
 | Brisbane | 146.9 | CPI Housing (proxy) |
 
-**NSW observed rent:** median weekly rent from Nov 2025 bond lodgements = **$700/week** (n ≈ 23k lodgements after basic cleaning).
+**Observed median weekly rents** (official bond / rental-report sources; see table for periods):
+
+| Capital | Median $/week | Period | Observed? |
+| --- | ---: | --- | --- |
+| Sydney (NSW bonds) | **700** | Nov 2025 | Yes |
+| Melbourne | **580** | Sep quarter 2025 | Yes |
+| Brisbane | **620** | Sep quarter 2025 | Yes |
+| Perth | **700** | Nov 2025 | Yes |
+| Adelaide (metro) | **580** | Apr–Jun 2026 | Yes |
+| Hobart (Greater) | **530** | Nov 2025 | Yes |
+| Canberra | 765 | CPI fallback | No |
+| Darwin | 637 | CPI fallback | No |
 
 ![CPI and rents](outputs/figures/cpi_and_rents_by_capital.png)
 
@@ -120,22 +139,23 @@ We report two complementary metrics at the **state capital** level (earnings mat
 
 Higher values imply more weekly pay per unit of city-wide consumer prices.
 
-### B. Imputed rent burden (%)
+### B. Rent burden (%)
 
-1. Anchor: **NSW median weekly rent** = $700 (bond data).  
-2. For each capital \(c\):  
+1. **Preferred:** official **median weekly rent** for the capital from bond lodgements or state rental reports (see `median_weekly_rents_by_capital.csv`).  
+2. **Fallback (ACT, Darwin only):**  
    \(\text{rent\_hat}_c = 700 \times \dfrac{\text{rent/housing index}_c}{\text{rent index}_{\text{Sydney}}}\)  
-3. \(\text{rent\_burden\_pct} = 100 \times \text{rent\_hat}_c / \text{AWE}_c\)
+   anchored to NSW Nov 2025 bond median $700.  
+3. \(\text{rent\_burden\_pct} = 100 \times \text{median\_weekly\_rent} / \text{AWE}_c\)
 
-**Residual weekly income** = AWE − rent_hat (crude “after rent” cushion, before tax and other costs).
+**Residual weekly income** = AWE − median rent (crude “after rent” cushion, before tax and other costs).
 
 ### Results (base definition)
 
 | State | Capital | AWE | Real earnings index | Rent burden % | Residual $/week |
 | --- | --- | ---: | ---: | ---: | ---: |
-| ACT | Canberra | 2,249 | **1,638** | 34.0 | 1,484 |
-| WA | Perth | 2,189 | 1,588 | 35.1 | 1,420 |
-| TAS | Hobart | 1,821 | 1,311 | **41.7** | 1,062 |
+| ACT | Canberra | 2,249 | **1,638** | **34.0** | 1,484 |
+| WA | Perth | 2,189 | 1,588 | 32.0 | 1,489 |
+| TAS | Hobart | 1,821 | 1,311 | 29.1 | 1,291 |
 
 ![Affordability scatter](outputs/figures/affordability_scatter.png)
 
@@ -143,8 +163,8 @@ Higher values imply more weekly pay per unit of city-wide consumer prices.
 
 | Variant | Change | Effect |
 | --- | --- | --- |
-| **S1** | EEH total cash instead of AWE ordinary time | Rankings similar; rent burden rises (lower denominator), e.g. Hobart **52.5%** |
-| **S2** | Scale imputed rent using **CPI all groups** instead of rent/housing index | Slightly lower burdens in high-housing-index cities |
+| **S1** | EEH total cash instead of AWE ordinary time | Rent burden rises (lower denominator), e.g. Hobart **36.7%**, Canberra **40.3%** |
+| **S2** | CPI all-groups scaling for **imputed** cities only | Canberra **30.6%** (observed cities unchanged) |
 
 ---
 
@@ -153,13 +173,14 @@ Higher values imply more weekly pay per unit of city-wide consumer prices.
 1. **Migration-aligned shortages** are widespread: **227** occupations are simultaneously in national shortage and on the **CSOL**; legislative lists add overlapping pathways (MLTSSL/STSOL/ROL).  
 2. **Nominal pay** is highest in **ACT/WA**, then NSW; Tasmania is lowest on AWE but still saw strong **YoY growth** (~25%).  
 3. **Price levels** (CPI) vary modestly across capitals compared with **earnings** spreads; **Canberra** combines high AWE with a mid-range CPI, yielding the strongest **real earnings index** in this framework.  
-4. **Housing cost pressure** is most acute in **Hobart** and **Adelaide** on the imputed rent-burden measure, driven by lower AWE and relatively high housing/rent indexes—not only Sydney/Melbourne.  
+4. With **observed bond/report medians** for six capitals, **rent burden** is highest for **Canberra** and **Sydney** (~34%) on this crude measure; **Melbourne** is lower (~29%) at the Sep-2025 published median ($580/week). Hobart falls to **~29%** once Greater Hobart bond data ($530/week) replace CPI scaling.  
 5. **IVI** shows very large vacancy counts in clerical/call-centre and health/care groups; migrant planning should still prioritise **visa-list + shortage** alignment at 6-digit ANZSCO.
 
 ### Limitations
 
 - Earnings (Nov 2025 AWE) and CPI (Dec 2024 quarter) are **not contemporaneous**.  
-- Rent imputation is **not** a substitute for local bond or census rent statistics.  
+- Rent periods **differ by source** (monthly bonds vs quarterly reports); earnings and CPI are not fully aligned either.  
+- **ACT/NT** medians remain CPI-scaled fallbacks; ACT Revenue does not publish open bond rent microdata here.  
 - PDF parsing of visa lists may miss formatting edge cases; codes are validated against CSOL overlap counts.  
 - No tax, household composition, or transport costs—indexes are **illustrative**, not welfare measures.
 
@@ -167,7 +188,7 @@ Higher values imply more weekly pay per unit of city-wide consumer prices.
 
 ## Resumen en español
 
-Este repositorio analiza el mercado laboral australiano con datos oficiales descargables. **273** ocupaciones presentan escasez nacional; **227** de ellas figuran también en la lista CSOL de visados calificados. Los salarios semanales más altos (tiempo ordinario, adultos a tiempo completo, AWE nov-2025) están en **ACT (Canberra: A$2.249)** y **WA (Perth: A$2.189)**; los más bajos en **Tasmania (A$1.821)**. El índice de **ingreso real** (salario dividido por el IPC de la ciudad) favorece a **Canberra**. La **carga de alquiler imputada** es mayor en **Hobart (~42 % del salario)** usando la mediana de alquiler de NSW (A$700/semana) escalada por el IPC de vivienda/alquiler. Las vacantes IVI más altas (ago-2025) están en atención al cliente y salud. Para reproducir: `make all`. Fuentes y hashes en `data/SOURCES.md`.
+Este repositorio analiza el mercado laboral australiano con datos oficiales descargables. **273** ocupaciones presentan escasez nacional; **227** de ellas figuran también en la lista CSOL de visados calificados. Los salarios semanales más altos (tiempo ordinario, adultos a tiempo completo, AWE nov-2025) están en **ACT (Canberra: A$2.249)** y **WA (Perth: A$2.189)**; los más bajos en **Tasmania (A$1.821)**. El índice de **ingreso real** favorece a **Canberra**. Las **medianas de alquiler observadas** (fianzas/informes oficiales) cubren **seis capitales** — p. ej. Melbourne **A$580** (sep-2025), Brisbane **A$620**, Perth **A$700** (nov-2025), Hobart **A$530**; **Canberra y Darwin** siguen con estimación por IPC. La **carga de alquiler** más alta en la definición base es **Canberra (~34 % del AWE)**; Hobart baja a **~29 %** con datos de fianzas. Vacantes IVI (ago-2025) destacan en atención al cliente y salud. Reproducir: `make all`. Fuentes y hashes en `data/SOURCES.md`.
 
 ---
 
@@ -175,7 +196,7 @@ Este repositorio analiza el mercado laboral australiano con datos oficiales desc
 
 ```
 src/download/     # Official downloads + manifest
-src/io/           # Parsers (ABS, JSA, PDF lists, NSW rents)
+src/io/           # Parsers (ABS, JSA, PDF lists, observed capital rents)
 src/analysis/     # Analysis steps → figures/tables
 data/raw/         # Downloaded files (large xlsx/pdf gitignored; re-fetch with make data)
 data/processed/   # Cleaned CSV + summary JSON
